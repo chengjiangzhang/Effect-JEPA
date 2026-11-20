@@ -1,0 +1,68 @@
+// Each workgroup culls 64 lanes worth of candidates at a time. Every candidate
+// is considered exactly once. A shared slot is written at most once per batch.
+shared uint objectIndices[2048];
+shared uint numObjects;
+
+float accumulateDistance(float nearest, uint objectID, vec3 worldPosition)
+{
+    uint offset = objectID * 17u;
+    mat4 worldToLocal = transpose(mat4(CulledObjectData_1._m0[offset],
+        CulledObjectData_1._m0[offset+1u], CulledObjectData_1._m0[offset+2u], vec4(0,0,0,1)));
+    vec3 point = (worldToLocal * vec4(worldPosition,1)).xyz;
+    vec3 extent = CulledObjectData_1._m0[offset+3u].xyz;
+    vec4 atlasScale = CulledObjectData_1._m0[offset+4u];
+    float distanceScale = abs(atlasScale.w);
+    vec3 below = mix(vec3(0), abs(point + extent), lessThan(point, -extent));
+    vec3 above = mix(vec3(0), abs(point - extent), greaterThan(point, extent));
+    if ((dot(below,vec3(1)) + dot(above,vec3(1))) * distanceScale < _Globals.AOGlobalMaxSphereQueryRadius) {
+        vec3 clipped = clamp(point, -extent, extent);
+        vec3 uv = clipped * atlasScale.xyz + CulledObjectData_1._m0[offset+5u].xyz;
+        float sdf = textureLod(sampler3D(DistanceFieldTexture,DistanceFieldSampler),uv,0).x;
+        return min(nearest,(sdf + length(point-clipped))*distanceScale);
+    }
+    return nearest;
+}
+
+void main()
+{
+    float scale = _Globals.GlobalVolumeCenterAndExtent[_Globals.ClipmapIndex].w;
+    vec3 volume = _Globals.VolumeTexelSize;
+    vec3 extent = ((vec3(gl_WorkGroupSize)*0.5 * volume)*scale)*2.;
+    vec3 center = _Globals.UpdateRegionVolumeMin + (((((vec3(gl_WorkGroupID)+0.5)*vec3(gl_WorkGroupSize)+0.5)*volume)*scale)*2.);
+    vec3 voxel = _Globals.UpdateRegionVolumeMin + ((((vec3(gl_GlobalInvocationID)+0.5)*volume)*scale)*2.);
+    vec4 worldToUV = _Globals.GlobalVolumeWorldToUVAddAndMul[_Globals.ClipmapIndex];
+    ivec3 texel = ivec3(uvec3(fract(voxel*worldToUV.www + worldToUV.xyz)*_Globals.GlobalVolumeDimension));
+#ifdef USE_PARENT
+    float nearest = texelFetch(ParentGlobalDistanceFieldTexture,texel,0).x;
+#else
+    float nearest = _Globals.AOGlobalMaxSphereQueryRadius;
+#endif
+    uvec3 cell = gl_GlobalInvocationID/16u;
+    uint gridIndex = (cell.z*_Globals.CullGridDimension.y+cell.y)*_Globals.CullGridDimension.x+cell.x;
+    uint base = gridIndex*2048u;
+    uint count = texelFetch(CullGridObjectNum,int(gridIndex)).x;
+    bool dense = count >= 2048u;
+    uint available = dense ? texelFetch(CullGridObjectArray,int(base+2047u)).x : count;
+    for (uint start = 0u; start < available; start += 2048u) {
+        if (gl_LocalInvocationIndex==0u) numObjects = 0u;
+        barrier();
+        uint batchSize = min(available-start,2048u);
+        for (uint j=gl_LocalInvocationIndex; j<batchSize; j+=64u) {
+            uint candidate=start+j;
+            uint id = dense ? candidate : texelFetch(CullGridObjectArray,int(base+candidate)).x;
+            vec4 sphere = CulledObjectBounds._m0[id];
+            vec3 d = max(abs(sphere.xyz-center)-extent,vec3(0));
+            float r = sphere.w+_Globals.AOGlobalMaxSphereQueryRadius;
+            if (dot(d,d)<r*r) {
+                uint slot = atomicAdd(numObjects,1u);
+                objectIndices[slot]=id;
+            }
+        }
+        barrier();
+        for (uint i=0u;i<numObjects;++i)
+            nearest = accumulateDistance(nearest,objectIndices[i],voxel);
+        barrier();
+    }
+    if (all(lessThan(gl_GlobalInvocationID,_Globals.UpdateRegionSize)))
+        imageStore(RWGlobalDistanceFieldTexture,texel,vec4(nearest));
+}

@@ -1,0 +1,513 @@
+{
+  "collect_multicam.py": {
+    "source_sha256": "211691c73c65396eeb143b9b29f294a8a4c9a6d329de0f4f126cac596cad08b6",
+    "origin": "Effect-JEPA paired-data implementation; vendored and adapted for this standalone package",
+    "package_sha256": "9684f4d5f09ff0cf46989ce3428c39e997b49d28fb14e4515215944a846863a5",
+    "package_history": [
+      {
+        "package_sha256": "a5881825a4efea24f6165b6a9abee669a4da56f93eae479edc2d05b4b5ff48b3",
+        "local_patch": null,
+        "recorded_utc": "2026-11-03T14:37:42.636965+00:00"
+      },
+      {
+        "package_sha256": "0bd3cddab5d079df8f37038f91ea9fccb15c05199cb0caa166ce2ed84d53be67",
+        "local_patch": {
+          "id": "production-recovery-v2",
+          "description": "Deadline-aware stop and explicit lane settling controls; capture progress and bounded timeouts. Original acceptance thresholds retained. Native regression is recorded separately.",
+          "timestamp_utc": "2026-11-03T14:37:42.636979+00:00"
+        },
+        "recorded_utc": "2026-11-04T07:55:50.659003+00:00"
+      },
+      {
+        "package_sha256": "e2292945ea1500acaa0aec3d8688061a5f528fcf0fb225184d9a654d82ff78ab",
+        "local_patch": {
+          "id": "reactive-pedestrian-strict-yield-v1",
+          "timestamp_utc": "2026-11-04T07:55:50.659003+00:00",
+          "description": "Current-state pedestrian feedback, actual-body target clearance, continuous entry blocking checks, actual waiting-footprint audit and frozen source/evidence integration.",
+          "native_qualification": {
+            "status": "not_run",
+            "collection_paused": true,
+            "historical_data_not_upgraded": true
+          }
+        }
+      }
+    ],
+    "previous_package_sha256": "0bd3cddab5d079df8f37038f91ea9fccb15c05199cb0caa166ce2ed84d53be67",
+    "local_patch": {
+      "id": "pedestrian-mid-crossing-v2",
+      "description": "Causal current-state bounded crossing feedback, versioned replay audit and source identity. Fixed 2s history and 4s future. Native qualification recorded separately."
+    }
+  },
+  "collect_multicam_batch.py": {
+    "source_sha256": "1c262c7acda33d3364fdf8d1a4f03a3c3d850a25b3dd450dbc63f5ce3accbe8b",
+    "origin": "Effect-JEPA paired-data implementation; vendored and adapted for this standalone package",
+    "package_sha256": "077c42ba4ec5afd4dda4d9e2628507bc0032c2aa0ef3eaacae05dc31dede740e",
+    "package_history": [
+      {
+        "package_sha256": "25126e029881869ec0e8c6dcd23ae9572f8d860596afd78c974da338c40d82d7",
+        "local_patch": null,
+        "recorded_utc": "2026-11-03T14:37:42.637144+00:00"
+      },
+      {
+        "package_sha256": "3dab48a3c768067296546cc083ef882406f6f027ca8da63e17774f5c2d8197dd",
+        "local_patch": {
+          "id": "production-recovery-v2",
+          "description": "Deadline-aware stop and explicit lane settling controls; capture progress and bounded timeouts. Original acceptance thresholds retained. Native regression is recorded separately.",
+          "timestamp_utc": "2026-11-03T14:37:42.637149+00:00"
+        },
+        "recorded_utc": "2026-11-04T07:55:50.659003+00:00"
+      },
+      {
+        "package_sha256": "c12bfdf064cfe2114885ccfb45db7f372554ebb1f83499b603bb6e1b008feaed",
+        "local_patch": {
+          "id": "reactive-pedestrian-strict-yield-v1",
+          "timestamp_utc": "2026-11-04T07:55:50.659003+00:00",
+          "description": "Current-state pedestrian feedback, actual-body target clearance, continuous entry blocking checks, actual waiting-footprint audit and frozen source/evidence integration.",
+          "native_qualification": {
+            "status": "not_run",
+            "collection_paused": true,
+            "historical_data_not_upgraded": true
+          }
+        }
+      }
+    ],
+    "previous_package_sha256": "3dab48a3c768067296546cc083ef882406f6f027ca8da63e17774f5c2d8197dd",
+    "local_patch": {
+      "id": "pedestrian-mid-crossing-v2",
+      "description": "Causal current-state bounded crossing feedback, versioned replay audit and source identity. Fixed 2s history and 4s future. Native qualification recorded separately."
+    }
+  },
+  "scenarios_v2.py": {
+    "source_sha256": "69436670d3d60b3d3fb7d6f93ac5d886adfef7e96d1bc52cb68904a07beff500",
+    "origin": "Effect-JEPA paired-data implementation; vendored and adapted for this standalone package",
+    "package_sha256": "33ab277800c91908f8199fc88bea9708958b224b4c52fa6ec23981ee7253d27c"
+  },
+  "controllers_v2.py": {
+    "source_sha256": "dffd2f9b13feddef79ff709dded43109f7a6665211e461a831287aeb5de35b6e",
+    "origin": "Effect-JEPA paired-data implementation; vendored and adapted for this standalone package",
+    "package_sha256": "5946d95d48b1b88ce1a1a068783dae196ebd0a54e4bd297c41ffeb9aaba6e2be",
+    "previous_package_sha256": "4158a5a4db770c2bf2340c07a511734bee6b818c7a8ceb2891b21d4502d7e9b7",
+    "local_patch": {
+      "id": "reactive-pedestrian-strict-yield-v1",
+      "timestamp_utc": "2026-11-04T07:55:50.659003+00:00",
+      "description": "Current-state pedestrian feedback, actual-body target clearance, continuous entry blocking checks, actual waiting-footprint audit and frozen source/evidence integration.",
+      "native_qualification": {
+        "status": "not_run",
+        "collection_paused": true,
+        "historical_data_not_upgraded": true
+      }
+    },
+    "package_history": [
+      {
+        "package_sha256": "e8e9f76a59e092de183e02cf54521540833ce2588b4d03ed518ed46415fc9fd4",
+        "local_patch": {
+          "id": "stop-response-envelope-v1",
+          "timestamp_utc": "2026-11-03T10:54:18.988310+00:00",
+          "description": "Account for fixed controller response time in the ego stopping-speed envelope; reuse the same envelope for nominal, signal, hold and wait stop paths.",
+          "default_response_time_s": 0.75,
+          "unchanged": "NPC policies, requested accelerations and execution acceptance thresholds.",
+          "native_qualification": {
+            "scope": "One native CARLA 0.9.16 scene, original failed layout retained; not certification of the 200-scene evaluation dataset or visual quality.",
+            "scene_id": "scene_0000",
+            "branches": [
+              "stop_hold",
+              "yield_wait"
+            ],
+            "before_max_stop_overshoot_m": 1.9739285422023727,
+            "after_max_stop_overshoot_m": 0.37003279030032843,
+            "unchanged_stop_position_overshoot_threshold_m": 0.5,
+            "qualified_execution_branch_count": 6,
+            "evidence": {
+              "original_failure_report": {
+                "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/failed_initial_v1/data/attempts/scene_0000/candidate_00/attempt_00/reports/physics_execution.json",
+                "sha256": "694c58143160ecf2157454a95b4d0763ea477a8d38532599e47566170ff9419e"
+              },
+              "qualification_physics_execution": {
+                "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/stop_qualification_001/execution.json",
+                "sha256": "d14d6a1e8bdeb66c97aa8e839bde290584a39e7bde8f38addd6b1ae3820cf51f"
+              },
+              "qualification_capture_execution": {
+                "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/stop_qualification_001/reports/execution.json",
+                "sha256": "4644273b8d460d82a6aefdb8db94889f3732a9f240c9032bb9402fc390c2a28d"
+              },
+              "qualification_summary": {
+                "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/stop_qualification_001/qualification.json",
+                "sha256": "0ae79076c819c7efb621c89a0824c983d929eee3acd3d97a8cae251a7e8da59c"
+              }
+            }
+          }
+        },
+        "recorded_utc": "2026-11-03T14:37:42.637908+00:00"
+      },
+      {
+        "package_sha256": "4158a5a4db770c2bf2340c07a511734bee6b818c7a8ceb2891b21d4502d7e9b7",
+        "local_patch": {
+          "id": "production-recovery-v2",
+          "description": "Deadline-aware stop and explicit lane settling controls; capture progress and bounded timeouts. Original acceptance thresholds retained. Native regression is recorded separately.",
+          "timestamp_utc": "2026-11-03T14:37:42.637913+00:00"
+        },
+        "recorded_utc": "2026-11-04T07:55:50.659003+00:00"
+      }
+    ]
+  },
+  "preflight_physics.py": {
+    "source_sha256": "405bf5cfe9c67a176c8484cb2b513e379eadc8b42adc1f29048ca2feb7353c82",
+    "origin": "Effect-JEPA paired-data implementation; vendored and adapted for this standalone package",
+    "package_sha256": "002236954ed9e564eef8ba844cb887b1627b9993efa1717088a4b078805cb1d9",
+    "package_history": [
+      {
+        "package_sha256": "2379e753e6a1fdcc542fc9a66cf2d67e44768971af259883b46e5bda3098e11d",
+        "local_patch": null,
+        "recorded_utc": "2026-11-04T07:55:50.659003+00:00"
+      },
+      {
+        "package_sha256": "a01ce72c381aeb871b40fcb60c2c60a9f560babca80a5bc45d4cdcd3a8c47352",
+        "local_patch": {
+          "id": "reactive-pedestrian-strict-yield-v1",
+          "timestamp_utc": "2026-11-04T07:55:50.659003+00:00",
+          "description": "Current-state pedestrian feedback, actual-body target clearance, continuous entry blocking checks, actual waiting-footprint audit and frozen source/evidence integration.",
+          "native_qualification": {
+            "status": "not_run",
+            "collection_paused": true,
+            "historical_data_not_upgraded": true
+          }
+        }
+      }
+    ],
+    "previous_package_sha256": "2379e753e6a1fdcc542fc9a66cf2d67e44768971af259883b46e5bda3098e11d",
+    "local_patch": {
+      "id": "pedestrian-mid-crossing-v2",
+      "description": "Causal current-state bounded crossing feedback, versioned replay audit and source identity. Fixed 2s history and 4s future. Native qualification recorded separately."
+    }
+  },
+  "audit_preflight_progress.py": {
+    "source_sha256": "c63bb76d154fe9b92d393933f5c2d262829842b29564eb5affa9397b38202b84",
+    "origin": "Effect-JEPA paired-data implementation; vendored and adapted for this standalone package",
+    "package_sha256": "382120e5924168c5c206b410f57930bde7c2c2bbf6feec342b8cf0063ae97ce4",
+    "package_history": [
+      {
+        "package_sha256": "9a56464fb000b128b477f29d822ce4a6289f17e7d1057eea9ebd58eb37ae91d4",
+        "local_patch": null,
+        "recorded_utc": "2026-11-04T07:55:50.659003+00:00"
+      }
+    ],
+    "previous_package_sha256": "9a56464fb000b128b477f29d822ce4a6289f17e7d1057eea9ebd58eb37ae91d4",
+    "local_patch": {
+      "id": "reactive-pedestrian-strict-yield-v1",
+      "timestamp_utc": "2026-11-04T07:55:50.659003+00:00",
+      "description": "Current-state pedestrian feedback, actual-body target clearance, continuous entry blocking checks, actual waiting-footprint audit and frozen source/evidence integration.",
+      "native_qualification": {
+        "status": "not_run",
+        "collection_paused": true,
+        "historical_data_not_upgraded": true
+      }
+    }
+  },
+  "audit_multicam.py": {
+    "source_sha256": "a3bd0071cb181d32e4f8b5163e073dc14a3a5b081e371adbdc9037ea257e70a2",
+    "origin": "Effect-JEPA paired-data implementation; vendored and adapted for this standalone package",
+    "package_sha256": "fc668ba07983f7c17fd549f95123d93577ea00365c11718c88ae3cd5c96878cb"
+  },
+  "audit_render_consistency.py": {
+    "source_sha256": "f37d8f8c611af0e002c566725b15d19846f3880a383f1107f1b04c3085228849",
+    "origin": "Effect-JEPA paired-data implementation; vendored and adapted for this standalone package",
+    "package_sha256": "54c82908843a11fb9418dc4723d2c21816146ca9027c37f7f031c0b099377a43"
+  },
+  "audit_action_diversity.py": {
+    "source_sha256": "43154af6b0e799e1859fce9105d6fe55fdcd107663e8236b55fc45e7282a593c",
+    "origin": "Effect-JEPA paired-data implementation; vendored and adapted for this standalone package",
+    "package_sha256": "0ad0491f42ae362d5b06c4f0ec842fb6f963f2d526e1ee660f3a79021d30906b"
+  },
+  "audit_lane_change.py": {
+    "source_sha256": "59d190ecfd459eb7b4eed4db07c8fdf4776c61794428dd420920a5839a31504e",
+    "origin": "Effect-JEPA paired-data implementation; vendored and adapted for this standalone package",
+    "package_sha256": "c9da940a2c464ae222fa75f420a4e19ef09f336933dac487b12ad049fab1048d"
+  },
+  "audit_capture_equivalence.py": {
+    "source_sha256": "19a23d04d192500f9fce2ef29f4abf46e2ef29ca33a883cb200b8785b1e25f98",
+    "origin": "Effect-JEPA paired-data implementation; vendored and adapted for this standalone package",
+    "package_sha256": "e14a0d99b3eff363ef45d74c45ba2e89b71367d373967a7688257e13d98eee57",
+    "package_history": [
+      {
+        "package_sha256": "5232f3f81cfc17af8b9ea37722c2a01d09a1709df2b919ae98bf2c72dcc83891",
+        "local_patch": null,
+        "recorded_utc": "2026-11-04T07:55:50.659003+00:00"
+      },
+      {
+        "package_sha256": "240418d3c57b34340f4cb07206f149a900d799ce427b127c719735f8d3c07170",
+        "local_patch": {
+          "id": "reactive-pedestrian-strict-yield-v1",
+          "timestamp_utc": "2026-11-04T07:55:50.659003+00:00",
+          "description": "Current-state pedestrian feedback, actual-body target clearance, continuous entry blocking checks, actual waiting-footprint audit and frozen source/evidence integration.",
+          "native_qualification": {
+            "status": "not_run",
+            "collection_paused": true,
+            "historical_data_not_upgraded": true
+          }
+        }
+      }
+    ],
+    "previous_package_sha256": "5232f3f81cfc17af8b9ea37722c2a01d09a1709df2b919ae98bf2c72dcc83891",
+    "local_patch": {
+      "id": "pedestrian-mid-crossing-v2",
+      "description": "Causal current-state bounded crossing feedback, versioned replay audit and source identity. Fixed 2s history and 4s future. Native qualification recorded separately."
+    }
+  },
+  "render_gate_review.py": {
+    "source_sha256": "d23ad3f29f4fa7536ac5e61a600a497a7f93b82c92aa107f20d8030b52063185",
+    "origin": "Effect-JEPA paired-data implementation; vendored and adapted for this standalone package",
+    "package_sha256": "bdb2bbe76cc386f61da4f4997561d3447985b2e1c1f9bc7b1b34f0b3d8528d33"
+  },
+  "audit_auxiliary.py": {
+    "origin": "Standalone CARLA paired-data pipeline implementation",
+    "package_sha256": "8711b7a9d1cfd10ef9a4b25173ed1193e5a8b7a9e7e8fdbbc48a556731e8f685",
+    "package_history": [
+      {
+        "package_sha256": "b8324109c6ce54b8f58f53424e3f8e7595d039e93795605e67a44c43e8ecc448",
+        "local_patch": null,
+        "recorded_utc": "2026-11-04T07:55:50.659003+00:00"
+      },
+      {
+        "package_sha256": "4a86512abf3b2eeb399442735a41ce91770bf43e05924e6ae1598905435ffacb",
+        "local_patch": {
+          "id": "reactive-pedestrian-strict-yield-v1",
+          "timestamp_utc": "2026-11-04T07:55:50.659003+00:00",
+          "description": "Current-state pedestrian feedback, actual-body target clearance, continuous entry blocking checks, actual waiting-footprint audit and frozen source/evidence integration.",
+          "native_qualification": {
+            "status": "not_run",
+            "collection_paused": true,
+            "historical_data_not_upgraded": true
+          }
+        }
+      }
+    ],
+    "previous_package_sha256": "b8324109c6ce54b8f58f53424e3f8e7595d039e93795605e67a44c43e8ecc448",
+    "local_patch": {
+      "id": "pedestrian-mid-crossing-v2",
+      "description": "Causal current-state bounded crossing feedback, versioned replay audit and source identity. Fixed 2s history and 4s future. Native qualification recorded separately."
+    }
+  },
+  "audit_protocol.py": {
+    "origin": "Standalone CARLA paired-data pipeline implementation",
+    "package_sha256": "1fd97f8fec8201500a8fdbd2de92b2d7d8b336e826f248d78ee4f82999a438f2"
+  },
+  "auxiliary_actors.py": {
+    "origin": "Standalone CARLA paired-data pipeline implementation",
+    "package_sha256": "0f7f991f0096af20a91013ca89367822c7354814779ebc63b53dff22bf701095",
+    "package_history": [
+      {
+        "package_sha256": "7ebd4a7ff54e699a79f1a9d6faf0cfdcb363d915abfe1c0cb614a3fa98370522",
+        "local_patch": null,
+        "recorded_utc": "2026-11-04T07:55:50.659003+00:00"
+      },
+      {
+        "package_sha256": "29b5d15e8c31dc0ca6cbdc1b9e587dba67781115833fd41c0eb0ab868441b557",
+        "local_patch": {
+          "id": "reactive-pedestrian-strict-yield-v1",
+          "timestamp_utc": "2026-11-04T07:55:50.659003+00:00",
+          "description": "Current-state pedestrian feedback, actual-body target clearance, continuous entry blocking checks, actual waiting-footprint audit and frozen source/evidence integration.",
+          "native_qualification": {
+            "status": "not_run",
+            "collection_paused": true,
+            "historical_data_not_upgraded": true
+          }
+        }
+      }
+    ],
+    "previous_package_sha256": "7ebd4a7ff54e699a79f1a9d6faf0cfdcb363d915abfe1c0cb614a3fa98370522",
+    "local_patch": {
+      "id": "pedestrian-mid-crossing-v2",
+      "description": "Causal current-state bounded crossing feedback, versioned replay audit and source identity. Fixed 2s history and 4s future. Native qualification recorded separately."
+    }
+  },
+  "export_common.py": {
+    "origin": "Standalone CARLA paired-data pipeline implementation",
+    "package_sha256": "a61417ab57beb3c6f64a4ad423618fad836660c01d92a6c62d7b37c8da344fe9",
+    "package_history": [
+      {
+        "package_sha256": "31994484c40124dc7889ac550f7230e2df030962ecaee6d46394ec778db08195",
+        "local_patch": null,
+        "recorded_utc": "2026-11-04T07:55:50.659003+00:00"
+      }
+    ],
+    "previous_package_sha256": "31994484c40124dc7889ac550f7230e2df030962ecaee6d46394ec778db08195",
+    "local_patch": {
+      "id": "reactive-pedestrian-strict-yield-v1",
+      "timestamp_utc": "2026-11-04T07:55:50.659003+00:00",
+      "description": "Current-state pedestrian feedback, actual-body target clearance, continuous entry blocking checks, actual waiting-footprint audit and frozen source/evidence integration.",
+      "native_qualification": {
+        "status": "not_run",
+        "collection_paused": true,
+        "historical_data_not_upgraded": true
+      }
+    }
+  },
+  "review_common.py": {
+    "origin": "Standalone CARLA paired-data pipeline implementation",
+    "package_sha256": "493145f844204f4a601dd12ac9d75495811344d103865e65db1524cab8d7351a"
+  },
+  "ego_decisions.py": {
+    "origin": "Original implementation for the standalone CARLA paired-data pipeline",
+    "package_sha256": "7a39d8754fa32c74914c5bf9ed31f1314ef848602049b89101e045eb690f489f",
+    "previous_package_sha256": "569f4f73d86bcd5eca41f85dcf573976e4d55f0006b658c9ba71f3730711f820",
+    "local_patch": {
+      "id": "reactive-pedestrian-strict-yield-v1",
+      "timestamp_utc": "2026-11-04T07:55:50.659003+00:00",
+      "description": "Current-state pedestrian feedback, actual-body target clearance, continuous entry blocking checks, actual waiting-footprint audit and frozen source/evidence integration.",
+      "native_qualification": {
+        "status": "not_run",
+        "collection_paused": true,
+        "historical_data_not_upgraded": true
+      }
+    },
+    "package_history": [
+      {
+        "package_sha256": "b01e2a0cf3cd08f5e3aefa1325bfc9e90b6998633b647a943cd9cc5b2000308f",
+        "local_patch": {
+          "id": "stop-response-envelope-v1",
+          "timestamp_utc": "2026-11-03T10:54:18.988310+00:00",
+          "description": "Account for fixed controller response time in the ego stopping-speed envelope; reuse the same envelope for nominal, signal, hold and wait stop paths.",
+          "default_response_time_s": 0.75,
+          "unchanged": "NPC policies, requested accelerations and execution acceptance thresholds.",
+          "native_qualification": {
+            "scope": "One native CARLA 0.9.16 scene, original failed layout retained; not certification of the 200-scene evaluation dataset or visual quality.",
+            "scene_id": "scene_0000",
+            "branches": [
+              "stop_hold",
+              "yield_wait"
+            ],
+            "before_max_stop_overshoot_m": 1.9739285422023727,
+            "after_max_stop_overshoot_m": 0.37003279030032843,
+            "unchanged_stop_position_overshoot_threshold_m": 0.5,
+            "qualified_execution_branch_count": 6,
+            "evidence": {
+              "original_failure_report": {
+                "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/failed_initial_v1/data/attempts/scene_0000/candidate_00/attempt_00/reports/physics_execution.json",
+                "sha256": "694c58143160ecf2157454a95b4d0763ea477a8d38532599e47566170ff9419e"
+              },
+              "qualification_physics_execution": {
+                "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/stop_qualification_001/execution.json",
+                "sha256": "d14d6a1e8bdeb66c97aa8e839bde290584a39e7bde8f38addd6b1ae3820cf51f"
+              },
+              "qualification_capture_execution": {
+                "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/stop_qualification_001/reports/execution.json",
+                "sha256": "4644273b8d460d82a6aefdb8db94889f3732a9f240c9032bb9402fc390c2a28d"
+              },
+              "qualification_summary": {
+                "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/stop_qualification_001/qualification.json",
+                "sha256": "0ae79076c819c7efb621c89a0824c983d929eee3acd3d97a8cae251a7e8da59c"
+              }
+            }
+          }
+        },
+        "recorded_utc": "2026-11-03T14:37:42.639108+00:00"
+      },
+      {
+        "package_sha256": "569f4f73d86bcd5eca41f85dcf573976e4d55f0006b658c9ba71f3730711f820",
+        "local_patch": {
+          "id": "production-recovery-v2",
+          "description": "Deadline-aware stop and explicit lane settling controls; capture progress and bounded timeouts. Original acceptance thresholds retained. Native regression is recorded separately.",
+          "timestamp_utc": "2026-11-03T14:37:42.639113+00:00"
+        },
+        "recorded_utc": "2026-11-04T07:55:50.659003+00:00"
+      }
+    ]
+  },
+  "audit_realized_actions.py": {
+    "origin": "Original implementation for the standalone CARLA paired-data pipeline",
+    "package_sha256": "cec7d596b391e5a9aad99a1c3102f19b4a5a5d64b75e10a7bc1a749814408600"
+  },
+  "__init__.py": {
+    "origin": "Original implementation for the standalone CARLA paired-data pipeline",
+    "package_sha256": "2d975ed99e910ebbe2977d8e390d0b6698d07f61cbdcbfc365a7b8aad6386d7d"
+  },
+  "audit_execution.py": {
+    "origin": "Original implementation for the standalone CARLA paired-data pipeline",
+    "package_sha256": "6d2e10da3720079aff59aed1c00e2bd4044fcc1527ab1e64f1f27759b19a4d19",
+    "package_history": [
+      {
+        "package_sha256": "df54f7682507cb76787117fb758c7f88db54ddebcbb5fb583d1c3bb00b825932",
+        "local_patch": null,
+        "recorded_utc": "2026-11-03T14:37:42.639389+00:00"
+      },
+      {
+        "package_sha256": "46712cd8ae380f29ec3841c5930feb873f350dfd54ba63c518abda62f90b1ff6",
+        "local_patch": {
+          "id": "production-recovery-v2",
+          "description": "Deadline-aware stop and explicit lane settling controls; capture progress and bounded timeouts. Original acceptance thresholds retained. Native regression is recorded separately.",
+          "timestamp_utc": "2026-11-03T14:37:42.639393+00:00"
+        },
+        "recorded_utc": "2026-11-04T07:55:50.659003+00:00"
+      }
+    ],
+    "previous_package_sha256": "46712cd8ae380f29ec3841c5930feb873f350dfd54ba63c518abda62f90b1ff6",
+    "local_patch": {
+      "id": "reactive-pedestrian-strict-yield-v1",
+      "timestamp_utc": "2026-11-04T07:55:50.659003+00:00",
+      "description": "Current-state pedestrian feedback, actual-body target clearance, continuous entry blocking checks, actual waiting-footprint audit and frozen source/evidence integration.",
+      "native_qualification": {
+        "status": "not_run",
+        "collection_paused": true,
+        "historical_data_not_upgraded": true
+      }
+    }
+  },
+  "semantic_lidar.py": {
+    "origin": "Original implementation for the standalone CARLA paired-data pipeline",
+    "package_sha256": "db50e024262134d01c167c884266765cef3e25a0fe5dad07b04242c3b2c3a48d"
+  },
+  "pedestrian_policy.py": {
+    "origin": "Local implementation in self-contained CARLA paired-data pipeline",
+    "package_sha256": "d75077dd47304f1e71accf822756c230205bf7d32dc3e4dce64e773e99f67d80",
+    "local_patch": {
+      "id": "pedestrian-mid-crossing-v2",
+      "description": "Causal current-state bounded crossing feedback, versioned replay audit and source identity. Fixed 2s history and 4s future. Native qualification recorded separately."
+    },
+    "package_history": [
+      {
+        "package_sha256": "e2dbd75f3ce9897f78bf0a21e5a7e9e9b70d2c86a13e26695a2d40c1402092b1",
+        "local_patch": {
+          "id": "reactive-pedestrian-strict-yield-v1",
+          "timestamp_utc": "2026-11-04T07:55:50.659003+00:00",
+          "description": "Current-state pedestrian feedback, actual-body target clearance, continuous entry blocking checks, actual waiting-footprint audit and frozen source/evidence integration.",
+          "native_qualification": {
+            "status": "not_run",
+            "collection_paused": true,
+            "historical_data_not_upgraded": true
+          }
+        }
+      }
+    ]
+  },
+  "pedestrian_crossing.py": {
+    "origin": "Original self-contained CARLA paired-data implementation",
+    "package_sha256": "02be30cc08d8f4e510ddbc955386eb2af4e7d4b2c911df3fa21d2735c2d033c2",
+    "local_patch": {
+      "id": "pedestrian-mid-crossing-v2-risk-tie-resolution",
+      "description": "Use half-tick tie resolution for unsafe impact-time/exposure comparisons and preserve the ongoing response among tied choices. Avoid numeric noise reversing an escape; retain explicit predicted-conflict flag."
+    },
+    "package_history": [
+      {
+        "package_sha256": "1111f0688f62358da74e4c50039cb119cc9114a75a207fbd5091ec92a908aa56",
+        "local_patch": {
+          "id": "pedestrian-mid-crossing-v2",
+          "description": "Causal current-state bounded crossing feedback, versioned replay audit and source identity. Fixed 2s history and 4s future. Native qualification recorded separately."
+        }
+      },
+      {
+        "package_sha256": "7637cca446b3fcb040f71f339677ef6b46ca1a7c50d8e9906498224ff959a40a",
+        "local_patch": {
+          "id": "pedestrian-mid-crossing-v2-resume-hysteresis",
+          "description": "Native diagnostic exposed stop-to-slow chatter; apply clearance dwell to every resumed forward mode, except when holding the prior response is unsafe. End retreat episodes upon any confirmed forward resumption."
+        }
+      },
+      {
+        "package_sha256": "62bb0347cc3ab583897c355719907908043dfd5e0cf3ebffc201710b248e486f",
+        "local_patch": {
+          "id": "pedestrian-mid-crossing-v2-command-ramp-envelope",
+          "description": "Ramp consecutive commands to avoid native actuator-lag creep. Risk encloses measured-speed and command-speed rollouts and the space between them. Native motion is audited separately."
+        }
+      }
+    ]
+  }
+}

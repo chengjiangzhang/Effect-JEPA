@@ -1,0 +1,4 @@
+interface:
+  display_name: "CARLA 成对数据管线"
+  short_description: "用完整场景规格生成同初态多动作六相机与语义LiDAR数据，验收执行并整景去重"
+  default_prompt: "使用 $carla-paired-data，按交互网格均衡生成一批 CARLA 成对场景，完成spec编写、物理预检、六相机与语义LiDAR采集、执行验收、整景去重和数据划分。"

@@ -1,0 +1,349 @@
+{
+  "schema_version": 2,
+  "note": "12\u7c7b\u4ea4\u4e92\u6a21\u677f\u00d73\u79cdNPC\u7b56\u7565\u3002\u6bcf\u666f\u6309\u6a21\u677f\u9009\u62e9\u4e94\u4e2a\u52a8\u4f5c\u6761\u4ef6\uff0c\u53e6\u91c7maintain_repeat\u8d28\u68c0\uff1b\u7b49\u5f85\u3001\u505c\u8f66\u3001\u8fdb\u5165\u548c\u53d8\u9053\u65f6\u673a\u5747\u4e3a\u660e\u786e\u63a7\u5236\u5b9a\u4e49\uff0c\u5b9e\u9645\u8f68\u8ff9\u91cd\u590d\u987b\u6807\u8bb0\u53bb\u91cd\uff0c\u5f31\u53cd\u5e94\u548c\u6709\u6548\u5e72\u9884\u540e\u78b0\u649e\u4fdd\u7559\u3002",
+  "npc_styles": [
+    {
+      "id": "yielding",
+      "implementation_status": "implemented",
+      "parameters": {
+        "max_acceleration": 1.5,
+        "comfortable_brake": 3.0,
+        "time_headway": 1.8,
+        "minimum_gap": 3.0,
+        "desired_speed_multiplier": 0.9,
+        "conflict_time_gap_s": 2.2,
+        "yield_lookahead_s": 4.0
+      }
+    },
+    {
+      "id": "normal",
+      "implementation_status": "implemented",
+      "parameters": {
+        "max_acceleration": 2.0,
+        "comfortable_brake": 2.8,
+        "time_headway": 1.25,
+        "minimum_gap": 2.5,
+        "desired_speed_multiplier": 1.0,
+        "conflict_time_gap_s": 1.7,
+        "yield_lookahead_s": 3.0
+      }
+    },
+    {
+      "id": "assertive",
+      "implementation_status": "implemented",
+      "parameters": {
+        "max_acceleration": 2.5,
+        "comfortable_brake": 3.0,
+        "time_headway": 0.9,
+        "minimum_gap": 1.8,
+        "desired_speed_multiplier": 1.1,
+        "conflict_time_gap_s": 1.2,
+        "yield_lookahead_s": 2.5
+      }
+    }
+  ],
+  "pairs": [
+    {
+      "id": "follower_response_straight",
+      "interaction": "ego_speed_change_follower_response",
+      "topology": "straight",
+      "semantic_status": "candidate",
+      "implementation_status": "implemented",
+      "candidate_actions": [
+        "maintain",
+        "brake_light",
+        "brake",
+        "accelerate",
+        "brake_delayed"
+      ],
+      "template": "follower_response_straight",
+      "enabled": true,
+      "action_design": "template_specific_v2"
+    },
+    {
+      "id": "ego_lane_change_straight",
+      "interaction": "ego_lane_change_target_lane_response",
+      "topology": "straight",
+      "semantic_status": "candidate",
+      "enabled": true,
+      "template": "ego_lane_change_straight",
+      "implementation_status": "implemented",
+      "candidate_actions": [
+        "maintain",
+        "brake_light",
+        "brake",
+        "accelerate",
+        "left",
+        "right",
+        "left_delayed",
+        "right_delayed"
+      ],
+      "action_design": "template_specific_v2"
+    },
+    {
+      "id": "merge_straight",
+      "interaction": "adjacent_merge",
+      "topology": "straight",
+      "semantic_status": "candidate",
+      "implementation_status": "implemented",
+      "candidate_actions": [
+        "maintain",
+        "brake",
+        "decelerate",
+        "accelerate",
+        "yield_wait",
+        "nominal"
+      ],
+      "template": "merge_straight",
+      "enabled": true,
+      "action_design": "template_specific_v2"
+    },
+    {
+      "id": "merge_ramp",
+      "interaction": "adjacent_merge",
+      "topology": "ramp_merge",
+      "semantic_status": "candidate",
+      "implementation_status": "implemented",
+      "candidate_actions": [
+        "maintain",
+        "brake",
+        "decelerate",
+        "accelerate",
+        "yield_wait",
+        "nominal"
+      ],
+      "template": "merge_ramp",
+      "enabled": true,
+      "action_design": "template_specific_v2"
+    },
+    {
+      "id": "ego_merge_ramp",
+      "interaction": "ego_active_ramp_merge_target_traffic_response",
+      "topology": "ramp_merge",
+      "semantic_status": "candidate",
+      "enabled": true,
+      "template": "ego_merge_ramp",
+      "implementation_status": "implemented",
+      "candidate_actions": [
+        "maintain",
+        "commit_go",
+        "commit_delayed",
+        "stop_hold",
+        "yield_wait"
+      ],
+      "action_design": "template_specific_v2"
+    },
+    {
+      "id": "left_unsignalized",
+      "interaction": "unprotected_left",
+      "topology": "unsignalized_intersection",
+      "semantic_status": "candidate",
+      "implementation_status": "implemented",
+      "candidate_actions": [
+        "maintain",
+        "decelerate",
+        "stop_hold",
+        "yield_wait",
+        "commit_go"
+      ],
+      "template": "left_unsignalized",
+      "enabled": true,
+      "action_design": "template_specific_v2"
+    },
+    {
+      "id": "left_signalized",
+      "interaction": "unprotected_left",
+      "topology": "signalized_intersection",
+      "semantic_status": "candidate",
+      "implementation_status": "implemented",
+      "candidate_actions": [
+        "maintain",
+        "decelerate",
+        "stop_hold",
+        "yield_wait",
+        "commit_go"
+      ],
+      "template": "left_signalized",
+      "enabled": true,
+      "action_design": "template_specific_v2"
+    },
+    {
+      "id": "cross_unsignalized",
+      "interaction": "crossing_conflict",
+      "topology": "unsignalized_intersection",
+      "semantic_status": "candidate",
+      "implementation_status": "implemented",
+      "candidate_actions": [
+        "maintain",
+        "decelerate",
+        "stop_hold",
+        "yield_wait",
+        "commit_go"
+      ],
+      "template": "cross_unsignalized",
+      "enabled": true,
+      "action_design": "template_specific_v2"
+    },
+    {
+      "id": "cross_signalized",
+      "interaction": "crossing_conflict",
+      "topology": "signalized_intersection",
+      "semantic_status": "candidate",
+      "implementation_status": "implemented",
+      "candidate_actions": [
+        "maintain",
+        "decelerate",
+        "stop_hold",
+        "yield_wait",
+        "commit_go"
+      ],
+      "template": "cross_signalized",
+      "enabled": true,
+      "action_design": "template_specific_v2"
+    },
+    {
+      "id": "pedestrian_straight",
+      "interaction": "pedestrian_crossing",
+      "topology": "straight",
+      "semantic_status": "candidate",
+      "implementation_status": "implemented",
+      "candidate_actions": [
+        "maintain",
+        "accelerate",
+        "nominal",
+        "decelerate",
+        "stop_hold",
+        "yield_wait"
+      ],
+      "template": "pedestrian_straight",
+      "enabled": true,
+      "action_design": "template_specific_v2"
+    },
+    {
+      "id": "pedestrian_unsignalized",
+      "interaction": "pedestrian_crossing",
+      "topology": "unsignalized_intersection",
+      "semantic_status": "candidate",
+      "implementation_status": "implemented",
+      "candidate_actions": [
+        "maintain",
+        "accelerate",
+        "nominal",
+        "decelerate",
+        "stop_hold",
+        "yield_wait"
+      ],
+      "template": "pedestrian_unsignalized",
+      "enabled": true,
+      "action_design": "template_specific_v2"
+    },
+    {
+      "id": "narrow_meeting",
+      "interaction": "narrow_road_meeting",
+      "topology": "narrow_two_way",
+      "semantic_status": "candidate",
+      "implementation_status": "implemented",
+      "candidate_actions": [
+        "maintain",
+        "decelerate",
+        "stop_hold",
+        "yield_wait",
+        "commit_go"
+      ],
+      "template": "narrow_meeting",
+      "enabled": true,
+      "action_design": "template_specific_v2"
+    },
+    {
+      "id": "narrow_ramp",
+      "interaction": "narrow_road_meeting",
+      "topology": "ramp_merge",
+      "semantic_status": "excluded",
+      "reason": "\u672c\u4f8b\u628a ramp_merge \u5b9a\u4e49\u4e3a\u540c\u5411\u6c47\u5165\uff0c\u4e0d\u7528\u5b83\u8868\u8fbe\u53cc\u5411\u7a84\u8def\u4f1a\u8f66\u3002\u82e5\u6539\u53d8\u5b9a\u4e49\uff0c\u5e94\u51bb\u7ed3\u65b0\u7f51\u683c\u7248\u672c\u3002",
+      "enabled": false
+    }
+  ],
+  "weather_variants": [
+    {
+      "id": "daylight",
+      "overrides": {}
+    },
+    {
+      "id": "soft_daylight",
+      "overrides": {
+        "cloudiness": 25.0,
+        "sun_altitude_angle": 50.0,
+        "sun_azimuth_angle": 70.0
+      }
+    },
+    {
+      "id": "late_afternoon",
+      "overrides": {
+        "cloudiness": 20.0,
+        "sun_altitude_angle": 35.0,
+        "sun_azimuth_angle": 130.0
+      }
+    },
+    {
+      "id": "overcast",
+      "overrides": {
+        "cloudiness": 90.0,
+        "sun_altitude_angle": 45.0,
+        "sun_azimuth_angle": 90.0,
+        "precipitation": 0.0,
+        "precipitation_deposits": 0.0,
+        "wetness": 0.0
+      }
+    },
+    {
+      "id": "light_rain",
+      "overrides": {
+        "cloudiness": 80.0,
+        "precipitation": 20.0,
+        "precipitation_deposits": 10.0,
+        "wetness": 45.0,
+        "wind_intensity": 10.0,
+        "fog_density": 2.0,
+        "sun_altitude_angle": 40.0,
+        "sun_azimuth_angle": 100.0
+      }
+    },
+    {
+      "id": "light_fog",
+      "overrides": {
+        "cloudiness": 55.0,
+        "fog_density": 12.0,
+        "fog_distance": 30.0,
+        "fog_falloff": 0.2,
+        "sun_altitude_angle": 30.0,
+        "sun_azimuth_angle": 60.0
+      }
+    },
+    {
+      "id": "night",
+      "overrides": {
+        "cloudiness": 20.0,
+        "sun_altitude_angle": -25.0,
+        "sun_azimuth_angle": 180.0
+      },
+      "camera_overrides": {
+        "shutter_speed": 200.0,
+        "iso": 200.0,
+        "fstop": 4.0
+      },
+      "vehicle_lights": "low_beam"
+    }
+  ],
+  "weather_policy": {
+    "priority": [
+      "interaction_template",
+      "feasible_location",
+      "weather_within_template"
+    ],
+    "same_scene_branches": "frozen",
+    "split_unit": "base_scene_id",
+    "variant_quality_status": "requires_native_rgb_and_repeat_review",
+    "native_visual_calibration": "soft_daylight cloudiness25 selected in Town05 native probe; all same-scene branches share exact settings; each production scene retains repeat/visibility QA. Original grid hash: b51d6a6129bdecf755950ba263f60ebf81f12d89a6a46dbf04d379eb5bb3eae8",
+    "night_exposure_evidence": "Native Town05 original night camera overexposed. ISO200, shutter1/200s, f/4 retains visible road/vehicles with dark sky; eval_001/lighting_night_corrected_retry. Each map still requires native preview and per-scene repeat checks."
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "schema": "encounter-and-dynamic-merge-qualification-v1",
+  "status": "qualified_with_explicit_coverage_limits",
+  "capture_source_runtime_identity": "d59d963fe1e0bc0041822e81258a1ed68caba6a661008b967bf8b10c0fa1c8d4",
+  "package_reporting_runtime_identity": "2a018d63bd5776dfa4594b0b8f63fb5987c90dc5a89e0dff3eb56da7506f852d",
+  "report_only_compatibility": {
+    "changed_executable": "scripts/runtime/interaction_coverage.py",
+    "corresponding_test_changed": true,
+    "capture_controller_layout_gates_identical": true,
+    "original_reports_preserved": true,
+    "recomputed_scenes": 24,
+    "old_progress_decrease_segments": 7,
+    "measured_abort_return_segments": 0,
+    "visual_reports_recomputed_separately": 2
+  },
+  "invariants": {
+    "history_seconds": 2,
+    "future_seconds": 4,
+    "physics_hz": 20,
+    "sensor_hz": 2,
+    "ego_action_pairs_per_scene": 10,
+    "thresholds": "unchanged",
+    "npc_uses_future_observations_or_ego_branch_labels": false
+  },
+  "native": {
+    "qualified_scenes": 24,
+    "failed_attempts": 12,
+    "templates": {
+      "merge_straight": 7,
+      "ego_lane_change_straight": 2,
+      "ego_merge_ramp": 2,
+      "cross_unsignalized": 2,
+      "pedestrian_straight": 2,
+      "left_unsignalized": 1,
+      "pedestrian_unsignalized": 2,
+      "cross_signalized": 1,
+      "merge_ramp": 1,
+      "follower_response_straight": 2,
+      "left_signalized": 1,
+      "narrow_meeting": 1
+    },
+    "action_pairs_passed": 240,
+    "history_branches_verified": 144,
+    "scenes_with_post_action_contact": 5,
+    "qualified_final_calibration_targets": {
+      "within_numeric_target": 22,
+      "observed_waiting_exempt": 2,
+      "qualified_scenes_without_numeric_targets": 2
+    },
+    "model_branches_with_post_action_contact": 9
+  },
+  "candidate_denominator": {
+    "proposed": 36,
+    "compiled": 32,
+    "compile_failures": 4,
+    "later_failures": 8,
+    "physics_qualified": 24
+  },
+  "calibration_scene_units": {
+    "numeric_target_scenes": 20,
+    "numeric_checks": 22,
+    "waiting_exempt_scenes": 2,
+    "no_numeric_target_scenes": 2
+  },
+  "straight_merge": {
+    "scenes": 7,
+    "branch_actor_records": 35,
+    "scenes_with_position_difference_above_repeat_and_05m": 4,
+    "scenes_with_primary_actor_all_pairs_identical": 3,
+    "native_cancel_transitions": 0,
+    "measured_return_segments": 0
+  },
+  "visual": {
+    "status": "passed",
+    "prespecified_scenes": [
+      "native_002/scene_0011",
+      "native_002/scene_0009"
+    ],
+    "maps": [
+      "Town04",
+      "Town05"
+    ],
+    "fixed_selection_replaced": false,
+    "rgb_pairs_passed": 396,
+    "history_branches": 12,
+    "physics_visual_exact_branches": 12,
+    "ego_pairs_passed": 20,
+    "rgb_image_count": 936,
+    "semantic_lidar_count": 156,
+    "sealed_files": 1418,
+    "max_rgb_mae_0_255": 0.01814212962962963,
+    "max_rgb_tile_mae_0_255": 0.13473333333333334,
+    "original_thresholds_unchanged": true,
+    "original_physics_inputs_unchanged": true,
+    "cleanup_passed": true,
+    "reviewed_original_images": 8
+  },
+  "limits": [
+    "No native early-cancel or physical-return example occurred. Offline capability is not realized coverage.",
+    "Requested partial-merge phases were not established as substantial measured t0 lateral progress.",
+    "Two requested pedestrian entry/crossing scenes remained waiting at t0 and are ETA-exempt, not numerically calibrated.",
+    "Continuous return counting requires >0.1mm inward motion per physics step; pauses split segments and may cause conservative undercount.",
+    "Constant-velocity encounter estimates and local gap decisions are not collision-avoidance guarantees.",
+    "Five scenes retained nine model branches with valid post-action contacts.",
+    "This work does not fix the known Town07 vegetation RGB repeat limitation.",
+    "These are bounded engineering development samples, not estimates of population behavior distribution."
+  ],
+  "preserved": [
+    "eval_006200",
+    "existing_viewer",
+    "all_failed_attempts",
+    "all_prior_source_versions"
+  ],
+  "evidence_root": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/merge_feedback_001",
+  "evidence": {
+    "native_final_summary.json": "45ffd9c876d58b056bdfcef895f929fb06d16a8479dc532b0b396cd194369444",
+    "coverage_corrected_001/index.json": "f0f99d899e1ee4821eacc58017d7d5122fd57fd2de762eefe7e211d34e816141",
+    "report_source_compatibility_001.json": "e50e8ed5f151fafe85086e749e8632165c7b8810af8557bcd339ed6f5445024d",
+    "forward_review_reporting_001.json": "8edac215c42b5254d2fa1faf75200599d0c2d537f85aa91e71accaacc9c97fc2",
+    "forward_review_native_final_001.json": "cac784da67402315665f9d17271dbfc1af0dd5685895ee8368635be2b66410a0",
+    "visual_summary_001.json": "2925472077cb4ba1b496487c6710dd5a20efda496c1bb06166f21c3d232d2940",
+    "visual_001/exit.json": "991e911699930db397a4cb76d15fcd81335f212d6f160a7c0b6bc69d9f45506f",
+    "visual_001/root_actual_wait.json": "0a4a25179dd7f4b9d0792f3227c193ba27e7ebe48989feff340e28993009229c",
+    "coverage_corrected_visual_002/index.json": "9397e6e37f052d932b27bbd22c01ee31b57e0156deff54e951fd02ef6a3b2e7f",
+    "visual_inspection_merge_001.json": "9e89d1b3c0c644d9ea4b6e35ee6ac0cc471aaf0f36ff3daebb04787f3b5cbbbc",
+    "visual_inspection_pedestrian_001.json": "52a30e5ac509fc5915fad1995951abfda1727eaaf8dbd85b515652e372474497"
+  },
+  "qualified_utc": "2026-11-16T03:31:23.181835+00:00"
+}

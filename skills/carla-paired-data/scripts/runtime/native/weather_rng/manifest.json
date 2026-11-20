@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "policy": "isolated_bp_weather_rain_v1",
+  "target_platform": "linux_x86_64",
+  "files": {
+    "weather_rng.c": "0737bc9485409787c4b102861f380acf40fd447f2ba99e459f290fe2a804ce0f",
+    "rand_entry.S": "7b084a2cbfbcc4a2e012dc6330ca0989942225eb2eb0d702fed93f1709fdc282",
+    "libweather_rng.so": "f8e013fe51966085f37fb88c8def4296ac5b7729e7d866ac07df5355db1696ba"
+  },
+  "rng": {
+    "algorithm": "glibc_random_r_type3_deg31_sep3",
+    "state_bytes": 128,
+    "seed": 0,
+    "libc_version": "2.35",
+    "initialization": "once per native process; actor/map reload and native srand do not reset private state",
+    "actual_libc_consumption": "exactly one real libc rand consumed before every returned rand value",
+    "non_weather_return": "unchanged actual libc output"
+  },
+  "target": {
+    "rand_return_address": "0x5ab3d5a",
+    "frame_register": "rbx",
+    "function": "Rain",
+    "function_outer": "BP_Weather_C",
+    "object_class": "BP_Weather_C",
+    "script_size": 3565,
+    "code_offsets": [
+      1584,
+      3304
+    ],
+    "weather_thread": "main thread only; otherwise fail closed",
+    "unknown_rain_script": "fail closed"
+  },
+  "native_resources": {
+    "CarlaUE4/Binaries/Linux/CarlaUE4-Linux-Shipping": "03bcd413615fa1fc61a5b846342dbdc4e6b3541320a40d6bf17ff927039731f9",
+    "CarlaUE4/Content/Carla/Blueprints/Weather/BP_Weather.uasset": "55844561add98aa72b2478377458ca4af03f09b480df17983cca17859781c2d8",
+    "CarlaUE4/Content/Carla/Blueprints/Weather/BP_Weather.uexp": "ba6423656d1d4b7dbaa64aa360f8f6ab083bbf16ec2d57a555e2b6b970843e16"
+  },
+  "build_command": "gcc -shared -fPIC -O2 -Wall -Wextra -Werror -o libweather_rng.so weather_rng.c rand_entry.S -ldl -pthread",
+  "environment": {
+    "CARLA_WEATHER_RNG_SEED": "0",
+    "CARLA_WEATHER_RNG_LOG_DIR": "absolute fresh epoch-specific writable directory",
+    "LD_PRELOAD": "absolute package-local libweather_rng.so path"
+  },
+  "native_qualified": false,
+  "compiler": {
+    "name": "gcc",
+    "version_output": "x86_64-linux-gnu-gcc-11 (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0\nCopyright (C) 2021 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+    "binary_sha256": "fb60c5945ce785d0cb2ef0303dac5249f25bd0d0324317a0734aae6aa24f609b",
+    "build_host_executable": "/usr/bin/x86_64-linux-gnu-gcc-11"
+  },
+  "upstream_manifest_sha256": "a7f7a92fdbc8b51a5b8e7a7a1b996f0da57cf1e28f1b9e864b378a611a29b146",
+  "decal_order_fix": {
+    "policy": "stable_decal_paths_v2",
+    "function": "0x3bf64f0",
+    "binary_sha256": "03bcd413615fa1fc61a5b846342dbdc4e6b3541320a40d6bf17ff927039731f9",
+    "scope": "Preserve original visibility and draw payload; retain SortOrder ascending, normal and blend descending. Replace pointer ties with material and component full object paths.",
+    "native_qualified": false,
+    "runtime_proof": "decal-order-PID.jsonl"
+  }
+}

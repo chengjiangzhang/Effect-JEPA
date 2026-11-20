@@ -1,0 +1,108 @@
+{
+  "schema": "randomization-feature-limited-visual-qualification-v1",
+  "created_utc": "2026-11-15T14:17:14.779434+00:00",
+  "installation_scope": "randomization_feature_with_documented_visual_limit",
+  "decision_reason": "Deliver the requested bounded randomization feature and its measured limits. The fixed holdout is reported without replacement or outcome filtering. A new general renderer repair is outside this randomization implementation; the failed visual scene remains inadmissible under unchanged gates.",
+  "original_four_scene_visual_protocol_met": false,
+  "original_protocol_preserved": "validation_protocol_001.json",
+  "production_acceptance_rules_changed": false,
+  "start_production": false,
+  "source": "source_004",
+  "runtime_source_identity": "3b3d074ecbd8a5574ac4e8dae9e51a8277957fb66b9ba6c94bb4e69eadc3a813",
+  "native_development": {
+    "source": "source_003",
+    "scenes_passed": 12
+  },
+  "independent_native": {
+    "source": "source_004",
+    "scenes_passed": 36,
+    "templates": 12,
+    "ego_pairs_passed": 360,
+    "history_branches_checked": 216
+  },
+  "offline": {
+    "passed": 634,
+    "skipped": 5,
+    "failed": 0,
+    "real_map_compiled_cells": 144
+  },
+  "visual_selected_scenes": [
+    "scene_0001",
+    "scene_0004",
+    "scene_0022",
+    "scene_0012"
+  ],
+  "visual_passed_scenes": [
+    "scene_0001",
+    "scene_0004",
+    "scene_0012"
+  ],
+  "visual_failed_scenes": [
+    "scene_0022"
+  ],
+  "passed_scene_rgb_pairs": 594,
+  "failed_visual_case": {
+    "scene_id": "scene_0022",
+    "map": "Town07",
+    "weather": "late_afternoon",
+    "failed_repeat_pairs": 37,
+    "repeat_pairs_checked": 78,
+    "physical_and_calibration_fields_exact": 26,
+    "failure_retained": true,
+    "scene_replaced": false,
+    "root_cause_resolved": false,
+    "visual_admissible": false,
+    "evidence": "Differences localize to vegetation/ground shading. Physics, camera and LiDAR agree; exact rendering subsystem is unresolved."
+  },
+  "limits": [
+    "Not arbitrary actor counts, routes or multiple pedestrians.",
+    "Not a calibrated traffic population or complete parameter-space coverage.",
+    "Signalized-straight initial speed and map availability remain constrained.",
+    "Same NPC response across branches and valid post-intervention contacts are retained.",
+    "Three successful visual scenes do not establish all-template or all-weather visual qualification.",
+    "Use the new source identity for future collection; never resume old frozen cohorts."
+  ],
+  "report_path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/scene_randomization_001/implementation_report.md",
+  "evidence_base": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/scene_randomization_001",
+  "evidence_sha256": {
+    "validation_protocol_001.json": "e10aa433435d733f83d9dd4bce0f8606357d561a2b4268c9b2032c858a869b63",
+    "source_004_manifest.json": "acdb825f3f5aab5d1c5eb41332bbf3fc2ed8feaf0bf49a499d311a7ec39e2cb1",
+    "native_003/supervision/exit.json": "1754bb31ac8abdc0e5bd79913c3cd26784c2e577233d671305b51df9f6af6509",
+    "native_003_summary.json": "a9591e365c28967ea840e5c0d69baba75dc59c87b59dc1fbe7dcd55323aeeb19",
+    "native_002_summary.json": "9e595f4715157f593bdcae5a97836e5f76459fa58cb1cdb886cf0fa40f890e16",
+    "offline_source004_001.json": "71887fef00e7471ffa902d2124ad71b96b29116a1bbb6a5b3dd58ee12c106f28",
+    "matrix_003_summary.json": "26598da826082f82b2e75705c6c26fe7d60c7ea2d23f67ddf5eefd1665960268",
+    "visual_selection_001.json": "2e182ac201e7ccb1ee3b2dfb469ca52f61360eaba4186a4bd02b6263ef09ea9c",
+    "visual_001/exit.json": "c31799c6f72c76240c2aaaeb24ed265b1854063b94a0e4e8ba462acbdf56f4db",
+    "visual_001/worker_status.json": "e8c4e11e02424e2391fd9eb2b513b936b347c1770ead6339d4ef55c1b261eba0",
+    "visual_002/exit.json": "2ef9079baa56cdd5e329a9d1c20da2189d2a457c3b0280ce6ddb88cb988a5786",
+    "visual_002/worker_result.json": "18272f979b30ba6e90433c62f0d2ee62fb0cd6fec9158c62ca1dbe4ca2f0c223",
+    "visual_001/attempts/scene_0022/reports/capture/render_preflight/scene_0022.json": "48674e9ab504a1d8859d0f160b926c885b1e94a822daed876df1f8960b982ad0",
+    "visual_inspection.json": "24cfefcfab59c09ee53e10f401ff8801d2182263beb465d785bb967b1e284a51",
+    "forward_review_010.json": "814cdae277e983b2051c819face1723e1d9b87d95d7d7f94affe2b20773d3097",
+    "visual_001/attempts/scene_0001/reports/delivery_files.json": "52f44adf8c1b0961a80f3f25a6936e34f0fe2e1f98f7367cc72381a52c540097",
+    "visual_001/attempts/scene_0001/reports/render.json": "3bc6a124e020788d325c387762af3b717b427c5f05a783316f1b6a6b76389e66",
+    "visual_001/attempts/scene_0001/reports/protocol.json": "45776b9f5787c266d66910960f932dae1d8a198f9af834180bd802a84610146f",
+    "visual_001/attempts/scene_0001/reports/equivalence.json": "5a3e5dc7c25b5c8e5698a24f137f60cbc373802fef591b6d1284f23cad38f9c0",
+    "visual_001/attempts/scene_0001/reports/execution.json": "54702d4bd37883b756f8cdd382e7cb9e296813da0734041b9506ee68033d1bed",
+    "visual_001/attempts/scene_0001/reports/action_selection.json": "ec2a51ea49cf207f83ae9166cb93d7ab6c914b0ad36f3c66af0c43ca06d00614",
+    "visual_001/attempts/scene_0001/reports/history_capture.json": "7c35fa312ae8dd509433a71c8494d989074abec5e8f8355e46905a38ed1e2c8b",
+    "visual_001/attempts/scene_0001/reports/interaction_coverage_capture.json": "5e7c03905756f7afecb3d650a71808cee414387fc769a14ee59fe0df590c0938",
+    "visual_001/attempts/scene_0004/reports/delivery_files.json": "e53044f1408fa2da90d7f3f59a3d21e37932470890e86fcf4046afd03122667f",
+    "visual_001/attempts/scene_0004/reports/render.json": "583e241a988a18b74debddb3d83fdc7845a88d3005f0a2c36ef0eafb356d46f0",
+    "visual_001/attempts/scene_0004/reports/protocol.json": "93de3d8b3bcec5da0fa3e46510d39bebf7103ceb45d1161a008b8b0c377c1ebf",
+    "visual_001/attempts/scene_0004/reports/equivalence.json": "0da27e37af722a9b5dde42981e30c87ba54e7c9d7ba1c63e4cc7cfb3ce0b60ae",
+    "visual_001/attempts/scene_0004/reports/execution.json": "e7e171262500ac8d0ca5e8ee69c4057b1ca352b47e0078bec38618f864a930ed",
+    "visual_001/attempts/scene_0004/reports/action_selection.json": "265e439be78889537f52576f6925ce27d53bbebdd3dca300f60f68bc1894650d",
+    "visual_001/attempts/scene_0004/reports/history_capture.json": "3327b28a281ec98e7a3765a1468aa88cd9b5f4cd59b25a8ab78399c0d221562e",
+    "visual_001/attempts/scene_0004/reports/interaction_coverage_capture.json": "8d24bac658b16d6bce7c15c2643174158ac7db9db9af24cbf841670de2f2933b",
+    "visual_002/attempts/scene_0012/reports/delivery_files.json": "49010ee55478653ce21d1644b7e45f97296ea2a3bf7de9ed10c5ef053bb51b79",
+    "visual_002/attempts/scene_0012/reports/render.json": "5950369a1dd96320bb7dace29e4c652eca7316cc718668b91d40baffa7e63f4a",
+    "visual_002/attempts/scene_0012/reports/protocol.json": "5e6ec04cb62c846c8babbebf376fed2a8b14cbf36bbc8de3b309e23111e930cc",
+    "visual_002/attempts/scene_0012/reports/equivalence.json": "39171a295af50f77b0233b747a9786b4b4f36989db1705da1a54919cbf03b0fd",
+    "visual_002/attempts/scene_0012/reports/execution.json": "48007869b86a801b5990b881bef7a99770d049f4b0566f38854f360b21b672d0",
+    "visual_002/attempts/scene_0012/reports/action_selection.json": "58af4f168a659116b23b7c778c4c18bcbb8dc3655493ea3c41e26523bead487c",
+    "visual_002/attempts/scene_0012/reports/history_capture.json": "4ce30e899408dc7c485fb773cea6b2571434520534ca4cca0f36b062242f7aa7",
+    "visual_002/attempts/scene_0012/reports/interaction_coverage_capture.json": "4052c9fe308ee19f6e114e5ee940ab0871b3feb3014c52e4bcf02ef17188c2f2"
+  }
+}

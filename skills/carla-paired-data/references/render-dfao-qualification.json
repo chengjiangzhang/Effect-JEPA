@@ -1,0 +1,387 @@
+{
+  "carla": "0.9.16 UE 4.26.2 Linux Vulkan SM5",
+  "source_shader_cache_sha256": "67bb5dea997ba04df2cb1f6c3194b0a5482ec2bb72ed547baa3bf9a611c68e97",
+  "corrected_shader_cache_sha256": "4be705f6a45f7446902ab546d4e1fb697477a6abe9d83e783d089ad2c034da01",
+  "runtime_sha256": "4169cf72f90c8b950307e3ffc7e66ddd83c221ba9306ed01f5a59dbf447aab81",
+  "qualified_cases": {
+    "scene_0016": {
+      "ordinary_six_branch": {
+        "status": "passed",
+        "pairs": 198,
+        "failed": 0,
+        "mae_0_255": 0.0064504629629629625,
+        "max_tile_mae_0_255": 0.03453333333333333,
+        "fraction_any_channel_gt_8": 0.00021458333333333334,
+        "fraction_any_channel_gt_32": 0.0,
+        "raw_rgb_threshold_sha256": "0ed2dce4a982345cdb6039e7c768040eba45d0bb22fd2186ab41cc28824b4b1e",
+        "report_sha256": "847f4ab39bcb24583d610cd65fa802cd936ef5a609f2df84d22cb7305efc1d35"
+      },
+      "ordinary_preflight_gate": {
+        "status": "passed",
+        "pairs": 78,
+        "failed": 0,
+        "mae_0_255": 0.0064504629629629625,
+        "max_tile_mae_0_255": 0.03453333333333333,
+        "fraction_any_channel_gt_8": 0.00021458333333333334,
+        "fraction_any_channel_gt_32": 0.0,
+        "raw_rgb_threshold_sha256": "0ed2dce4a982345cdb6039e7c768040eba45d0bb22fd2186ab41cc28824b4b1e",
+        "report_sha256": "62039d75f018a50ecc2d961ddb605b2719a70fbd20f275e3f4e566fd8d55879d"
+      },
+      "frozen_inputs": {
+        "vehicles": true,
+        "pedestrians": true,
+        "map": true,
+        "weather": true,
+        "camera_rig": true,
+        "timing": true,
+        "branches": true,
+        "action": true,
+        "semantic_lidar": true,
+        "render_consistency_policy": true
+      },
+      "equivalent_physics": true,
+      "rgb_images": 468,
+      "lidar_packets": 78,
+      "lidar_repeat_and_prefix": {
+        "geometry_semantics_and_local_clock_equal_pairs": 33,
+        "raw_index_equal_pairs": 33,
+        "differing_raw_index_returns": 0,
+        "raw_packet_comparison": "passed"
+      },
+      "absolute_lidar_frame_offsets": [
+        0,
+        1
+      ],
+      "action_pair_count": 10,
+      "decision": "passed",
+      "proofs": [
+        {
+          "branch": "commit_go",
+          "shader": "4be705f6a45f7446902ab546d4e1fb697477a6abe9d83e783d089ad2c034da01",
+          "pid": 214890,
+          "shader_open": true,
+          "audit": "passed"
+        },
+        {
+          "branch": "decelerate",
+          "shader": "4be705f6a45f7446902ab546d4e1fb697477a6abe9d83e783d089ad2c034da01",
+          "pid": 210713,
+          "shader_open": true,
+          "audit": "passed"
+        },
+        {
+          "branch": "maintain",
+          "shader": "4be705f6a45f7446902ab546d4e1fb697477a6abe9d83e783d089ad2c034da01",
+          "pid": 207990,
+          "shader_open": true,
+          "audit": "passed"
+        },
+        {
+          "branch": "maintain_repeat",
+          "shader": "4be705f6a45f7446902ab546d4e1fb697477a6abe9d83e783d089ad2c034da01",
+          "pid": 209361,
+          "shader_open": true,
+          "audit": "passed"
+        },
+        {
+          "branch": "physics",
+          "shader": "4be705f6a45f7446902ab546d4e1fb697477a6abe9d83e783d089ad2c034da01",
+          "pid": 204859,
+          "shader_open": true,
+          "audit": "passed"
+        },
+        {
+          "branch": "stop_hold",
+          "shader": "4be705f6a45f7446902ab546d4e1fb697477a6abe9d83e783d089ad2c034da01",
+          "pid": 212150,
+          "shader_open": true,
+          "audit": "passed"
+        },
+        {
+          "branch": "yield_wait",
+          "shader": "4be705f6a45f7446902ab546d4e1fb697477a6abe9d83e783d089ad2c034da01",
+          "pid": 213578,
+          "shader_open": true,
+          "audit": "passed"
+        }
+      ],
+      "seal": "5618e85c7b90a73b5c974695bcd3c4e2ef7a9e1bc552953fb437f627d2ba9a51",
+      "once_failed_original": {
+        "status": "failed",
+        "pairs": 78,
+        "failed": 38,
+        "mae_0_255": 2.111968287037037,
+        "max_tile_mae_0_255": 16.564266666666665,
+        "fraction_any_channel_gt_8": 0.23699375,
+        "fraction_any_channel_gt_32": 0.00645,
+        "raw_rgb_threshold_sha256": "0ed2dce4a982345cdb6039e7c768040eba45d0bb22fd2186ab41cc28824b4b1e",
+        "report_sha256": "f6d946dacf8ac83c985b5668f91f28ac6a3f66a89fcb8b89d60138c84487c665"
+      },
+      "independent_repeat": {
+        "status": "passed",
+        "pairs": 78,
+        "failed": 0,
+        "mae_0_255": 0.012297222222222222,
+        "max_tile_mae_0_255": 1.352,
+        "fraction_any_channel_gt_8": 0.0005722222222222222,
+        "fraction_any_channel_gt_32": 0.00011875,
+        "raw_rgb_threshold_sha256": "0ed2dce4a982345cdb6039e7c768040eba45d0bb22fd2186ab41cc28824b4b1e",
+        "report_sha256": "fe521b5a3b2a249e8e8ca6d76f1a050c90765313149699ff5b0d25ff90e00770"
+      },
+      "six_camera_same_action_across_runs": {
+        "status": "passed",
+        "pairs": 156,
+        "failed": 0,
+        "max_tile": 1.352
+      }
+    },
+    "scene_0057": {
+      "ordinary_six_branch": {
+        "status": "passed",
+        "pairs": 198,
+        "failed": 0,
+        "mae_0_255": 0.008241203703703704,
+        "max_tile_mae_0_255": 0.06443333333333333,
+        "fraction_any_channel_gt_8": 0.0003368055555555556,
+        "fraction_any_channel_gt_32": 0.0,
+        "raw_rgb_threshold_sha256": "0ed2dce4a982345cdb6039e7c768040eba45d0bb22fd2186ab41cc28824b4b1e",
+        "report_sha256": "43738e8d6f1370988723853e22965130f9f1f0b753b26e20359d9645c3856c41"
+      },
+      "ordinary_preflight_gate": {
+        "status": "passed",
+        "pairs": 78,
+        "failed": 0,
+        "mae_0_255": 0.0005446759259259259,
+        "max_tile_mae_0_255": 0.011633333333333334,
+        "fraction_any_channel_gt_8": 4.4444444444444447e-05,
+        "fraction_any_channel_gt_32": 0.0,
+        "raw_rgb_threshold_sha256": "0ed2dce4a982345cdb6039e7c768040eba45d0bb22fd2186ab41cc28824b4b1e",
+        "report_sha256": "ba3b8a02b37d4d41c3263aa8fcbacd8906fc1a2f85fcbbd3cf8c305d73f9ff18"
+      },
+      "frozen_inputs": {
+        "vehicles": true,
+        "pedestrians": true,
+        "map": true,
+        "weather": true,
+        "camera_rig": true,
+        "timing": true,
+        "branches": true,
+        "action": true,
+        "semantic_lidar": true,
+        "render_consistency_policy": true
+      },
+      "equivalent_physics": true,
+      "rgb_images": 468,
+      "lidar_packets": 78,
+      "lidar_repeat_and_prefix": {
+        "geometry_semantics_and_local_clock_equal_pairs": 33,
+        "raw_index_equal_pairs": 33,
+        "differing_raw_index_returns": 0,
+        "raw_packet_comparison": "passed"
+      },
+      "absolute_lidar_frame_offsets": [
+        -1,
+        0
+      ],
+      "action_pair_count": 10,
+      "decision": "passed",
+      "proofs": [
+        {
+          "branch": "commit_go",
+          "shader": "4be705f6a45f7446902ab546d4e1fb697477a6abe9d83e783d089ad2c034da01",
+          "pid": 228080,
+          "shader_open": true,
+          "audit": "passed"
+        },
+        {
+          "branch": "decelerate",
+          "shader": "4be705f6a45f7446902ab546d4e1fb697477a6abe9d83e783d089ad2c034da01",
+          "pid": 224142,
+          "shader_open": true,
+          "audit": "passed"
+        },
+        {
+          "branch": "maintain",
+          "shader": "4be705f6a45f7446902ab546d4e1fb697477a6abe9d83e783d089ad2c034da01",
+          "pid": 221524,
+          "shader_open": true,
+          "audit": "passed"
+        },
+        {
+          "branch": "maintain_repeat",
+          "shader": "4be705f6a45f7446902ab546d4e1fb697477a6abe9d83e783d089ad2c034da01",
+          "pid": 222828,
+          "shader_open": true,
+          "audit": "passed"
+        },
+        {
+          "branch": "physics",
+          "shader": "4be705f6a45f7446902ab546d4e1fb697477a6abe9d83e783d089ad2c034da01",
+          "pid": 219028,
+          "shader_open": true,
+          "audit": "passed"
+        },
+        {
+          "branch": "stop_hold",
+          "shader": "4be705f6a45f7446902ab546d4e1fb697477a6abe9d83e783d089ad2c034da01",
+          "pid": 225468,
+          "shader_open": true,
+          "audit": "passed"
+        },
+        {
+          "branch": "yield_wait",
+          "shader": "4be705f6a45f7446902ab546d4e1fb697477a6abe9d83e783d089ad2c034da01",
+          "pid": 226772,
+          "shader_open": true,
+          "audit": "passed"
+        }
+      ],
+      "seal": "40a37f9f9ea74f62a725ee8db52382755c81e6086ad2580f7dd25772ac4925d6",
+      "once_failed_original": {
+        "status": "failed",
+        "pairs": 78,
+        "failed": 28,
+        "mae_0_255": 1.60325625,
+        "max_tile_mae_0_255": 16.088,
+        "fraction_any_channel_gt_8": 0.1826048611111111,
+        "fraction_any_channel_gt_32": 0.0020618055555555554,
+        "raw_rgb_threshold_sha256": "0ed2dce4a982345cdb6039e7c768040eba45d0bb22fd2186ab41cc28824b4b1e",
+        "report_sha256": "f0543bd53b508e167bba0cbdd03becc852ec874167924b6c0c8ffb2111189669"
+      },
+      "independent_repeat": {
+        "status": "passed",
+        "pairs": 78,
+        "failed": 0,
+        "mae_0_255": 0.008241203703703704,
+        "max_tile_mae_0_255": 0.06443333333333333,
+        "fraction_any_channel_gt_8": 0.0003368055555555556,
+        "fraction_any_channel_gt_32": 0.0,
+        "raw_rgb_threshold_sha256": "0ed2dce4a982345cdb6039e7c768040eba45d0bb22fd2186ab41cc28824b4b1e",
+        "report_sha256": "3ce6a3081895ab5ec57f75a51f28a3e613e75b223eef0374a078d0a5a33766dd"
+      },
+      "six_camera_same_action_across_runs": {
+        "status": "passed",
+        "pairs": 156,
+        "failed": 0,
+        "max_tile": 0.06443333333333333
+      }
+    },
+    "scene_0045": {
+      "ordinary_six_branch": {
+        "status": "passed",
+        "pairs": 198,
+        "failed": 0,
+        "mae_0_255": 0.04428796296296296,
+        "max_tile_mae_0_255": 2.2193,
+        "fraction_any_channel_gt_8": 0.00219375,
+        "fraction_any_channel_gt_32": 9.027777777777777e-06,
+        "raw_rgb_threshold_sha256": "0ed2dce4a982345cdb6039e7c768040eba45d0bb22fd2186ab41cc28824b4b1e",
+        "report_sha256": "765b153e185aab011b5a29f0a35e5a4bace7806e00891af4b753b4a2b47af5ff"
+      },
+      "ordinary_preflight_gate": {
+        "status": "passed",
+        "pairs": 78,
+        "failed": 0,
+        "mae_0_255": 0.00020532407407407408,
+        "max_tile_mae_0_255": 0.008966666666666666,
+        "fraction_any_channel_gt_8": 1.0416666666666666e-05,
+        "fraction_any_channel_gt_32": 0.0,
+        "raw_rgb_threshold_sha256": "0ed2dce4a982345cdb6039e7c768040eba45d0bb22fd2186ab41cc28824b4b1e",
+        "report_sha256": "e5f56013fb5d8c7109dacf7e0783de4bd1d3a25f05a1935b805db8f63e35fa93"
+      },
+      "frozen_inputs": {
+        "vehicles": true,
+        "pedestrians": true,
+        "map": true,
+        "weather": true,
+        "camera_rig": true,
+        "timing": true,
+        "branches": true,
+        "action": true,
+        "semantic_lidar": true,
+        "render_consistency_policy": true
+      },
+      "equivalent_physics": true,
+      "rgb_images": 468,
+      "lidar_packets": 78,
+      "lidar_repeat_and_prefix": {
+        "geometry_semantics_and_local_clock_equal_pairs": 33,
+        "raw_index_equal_pairs": 28,
+        "differing_raw_index_returns": 86,
+        "raw_packet_comparison": "failed",
+        "field_report_sha256": "625e3e51888dbd8238afe6ec82dea904ac11412d110d9a41d6b3163ca0203629"
+      },
+      "absolute_lidar_frame_offsets": [
+        -1,
+        0
+      ],
+      "action_pair_count": 10,
+      "decision": "passed",
+      "proofs": [
+        {
+          "branch": "accelerate",
+          "shader": "4be705f6a45f7446902ab546d4e1fb697477a6abe9d83e783d089ad2c034da01",
+          "pid": 241759,
+          "shader_open": true,
+          "audit": "passed"
+        },
+        {
+          "branch": "decelerate",
+          "shader": "4be705f6a45f7446902ab546d4e1fb697477a6abe9d83e783d089ad2c034da01",
+          "pid": 237285,
+          "shader_open": true,
+          "audit": "passed"
+        },
+        {
+          "branch": "maintain",
+          "shader": "4be705f6a45f7446902ab546d4e1fb697477a6abe9d83e783d089ad2c034da01",
+          "pid": 234296,
+          "shader_open": true,
+          "audit": "passed"
+        },
+        {
+          "branch": "maintain_repeat",
+          "shader": "4be705f6a45f7446902ab546d4e1fb697477a6abe9d83e783d089ad2c034da01",
+          "pid": 235746,
+          "shader_open": true,
+          "audit": "passed"
+        },
+        {
+          "branch": "physics",
+          "shader": "4be705f6a45f7446902ab546d4e1fb697477a6abe9d83e783d089ad2c034da01",
+          "pid": 230910,
+          "shader_open": true,
+          "audit": "passed"
+        },
+        {
+          "branch": "stop_hold",
+          "shader": "4be705f6a45f7446902ab546d4e1fb697477a6abe9d83e783d089ad2c034da01",
+          "pid": 238753,
+          "shader_open": true,
+          "audit": "passed"
+        },
+        {
+          "branch": "yield_wait",
+          "shader": "4be705f6a45f7446902ab546d4e1fb697477a6abe9d83e783d089ad2c034da01",
+          "pid": 240204,
+          "shader_open": true,
+          "audit": "passed"
+        }
+      ],
+      "seal": "4799bc0098eb841a4d0bd4115e2fb6474a488420e7dc7cd243620143a655074e"
+    }
+  },
+  "late_afternoon": {
+    "status": "passed",
+    "pairs": 78,
+    "failed": 0,
+    "mae_0_255": 0.009357407407407408,
+    "max_tile_mae_0_255": 0.06673333333333334,
+    "fraction_any_channel_gt_8": 0.0006284722222222222,
+    "fraction_any_channel_gt_32": 0.0,
+    "raw_rgb_threshold_sha256": "0ed2dce4a982345cdb6039e7c768040eba45d0bb22fd2186ab41cc28824b4b1e",
+    "report_sha256": "e0dab72613b6d232c32e8b00ceb3f8089b7f60c0fc0da8612691c2735b72d7ad"
+  },
+  "qualified_patch_sha256": "0236136741685bd89af71e683230de961d1eab31cd7814f6c92b313098a7d095",
+  "evidence_sha256": "d21c4f801f391f55bb64f5642aa9bf130bd1bacdeb21bde34418312b4383c941"
+}

@@ -1,0 +1,1147 @@
+{
+  "created_utc": "2026-11-04T05:04:00.324727+00:00",
+  "status": "qualified_and_installed",
+  "promoted": true,
+  "production_resumed": false,
+  "scope": "Rain and dry native qualification plus an ordinary managed-pipeline sealed delivery. Historical root metric fields describe Town04 rain; per-scope records retain exact reports and source hashes.",
+  "qualified_utc": "2026-11-04T04:59:15.761780+00:00",
+  "cleanup_verified": true,
+  "native_epochs": 18,
+  "raw_rgb_comparison_count": 552,
+  "pixel_exact_pairs": 247,
+  "maxima": {
+    "mae_0_255": 5.3935185185185184e-05,
+    "max_tile_mae_0_255": 0.006866666666666667,
+    "fraction_any_channel_gt_8": 2.0833333333333334e-06,
+    "fraction_any_channel_gt_32": 6.944444444444445e-07,
+    "max_channel_difference_0_255": 45
+  },
+  "metrics": {
+    "round_01_render.json": {
+      "pairs": 198,
+      "passed_pairs": 198,
+      "pixel_exact_pairs": 111,
+      "maxima": {
+        "mae_0_255": 5.3935185185185184e-05,
+        "max_tile_mae_0_255": 0.006866666666666667,
+        "fraction_any_channel_gt_8": 2.0833333333333334e-06,
+        "fraction_any_channel_gt_32": 6.944444444444445e-07,
+        "max_channel_difference_0_255": 45
+      },
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_full_probe/runs/weather_rng_full_001/reports/round_01_render.json",
+      "sha256": "e7f39dc34e26f12258250b85342d72dcf7746734c0634d65516644b4a2cd77de",
+      "thresholds": {
+        "mae_0_255": 0.25,
+        "max_tile_mae_0_255": 4.0,
+        "fraction_any_channel_gt_32": 0.001,
+        "fraction_any_channel_gt_8": 0.005
+      },
+      "tile_size_pixels": 100
+    },
+    "round_02_render.json": {
+      "pairs": 198,
+      "passed_pairs": 198,
+      "pixel_exact_pairs": 65,
+      "maxima": {
+        "mae_0_255": 2.4768518518518518e-05,
+        "max_tile_mae_0_255": 0.0017333333333333333,
+        "fraction_any_channel_gt_8": 6.944444444444445e-07,
+        "fraction_any_channel_gt_32": 0.0,
+        "max_channel_difference_0_255": 9
+      },
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_full_probe/runs/weather_rng_full_001/reports/round_02_render.json",
+      "sha256": "99ba17291b5c57fc3b17513ea42dcc7caee1b9b7b0c6aa350eb883cfc57cc04f",
+      "thresholds": {
+        "mae_0_255": 0.25,
+        "max_tile_mae_0_255": 4.0,
+        "fraction_any_channel_gt_32": 0.001,
+        "fraction_any_channel_gt_8": 0.005
+      },
+      "tile_size_pixels": 100
+    },
+    "cross_round_repeat.json": {
+      "pairs": 156,
+      "passed_pairs": 156,
+      "pixel_exact_pairs": 71,
+      "maxima": {
+        "mae_0_255": 5.3935185185185184e-05,
+        "max_tile_mae_0_255": 0.006866666666666667,
+        "fraction_any_channel_gt_8": 2.0833333333333334e-06,
+        "fraction_any_channel_gt_32": 6.944444444444445e-07,
+        "max_channel_difference_0_255": 45
+      },
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_full_probe/runs/weather_rng_full_001/reports/cross_round_repeat.json",
+      "sha256": "9d6a71f1d1c58b6d0d72928ba5de972807697e7dc2271769af076ea31ff3d4b7",
+      "thresholds": {
+        "mae_0_255": 0.25,
+        "max_tile_mae_0_255": 4.0,
+        "fraction_any_channel_gt_32": 0.001,
+        "fraction_any_channel_gt_8": 0.005
+      },
+      "tile_size_pixels": 100
+    }
+  },
+  "supporting_reports": {
+    "physics_execution.json": {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_full_probe/runs/weather_rng_full_001/reports/physics_execution.json",
+      "sha256": "0640e87000dbf50966ba0d8ea4753ed37a5cdf8eaf7fa490dc3b75ff4b8dc987",
+      "status": "passed",
+      "summary": null
+    },
+    "round_01_protocol.json": {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_full_probe/runs/weather_rng_full_001/reports/round_01_protocol.json",
+      "sha256": "6d67bd59be83655f5535b2c2f355570eee015c3e6b6f57d0f24d30e0c34ecad0",
+      "status": "passed",
+      "summary": {
+        "expected_branches": 6,
+        "passed_branches": 6,
+        "failed_branches": 0
+      }
+    },
+    "round_01_execution.json": {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_full_probe/runs/weather_rng_full_001/reports/round_01_execution.json",
+      "sha256": "44c6b4542e3b5613887a26217127280489a299795b854d6ca6a091b8e3a0f680",
+      "status": "passed",
+      "summary": null
+    },
+    "round_01_equivalence.json": {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_full_probe/runs/weather_rng_full_001/reports/round_01_equivalence.json",
+      "sha256": "75ebfce5317f05bc8d44c478f259aa393e1d522465b31aa30b38a72d5f794df3",
+      "status": "equivalent_exact",
+      "summary": null,
+      "compared_branches": 6,
+      "identity_matched_branches": 6,
+      "physical_fields_exact_branches": 6,
+      "physical_and_relative_clocks_exact_branches": 6
+    },
+    "round_01_formal_clocks.json": {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_full_probe/runs/weather_rng_full_001/reports/round_01_formal_clocks.json",
+      "sha256": "101e540a27f44deb54319838f378d9388a09607c5da6bffff2ddf8da0855a4be",
+      "status": "passed",
+      "summary": null
+    },
+    "round_02_protocol.json": {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_full_probe/runs/weather_rng_full_001/reports/round_02_protocol.json",
+      "sha256": "9e4480221c62de92a85896c26fb80e1ccba05eb5fe96b2c11b7b3d418c16112b",
+      "status": "passed",
+      "summary": {
+        "expected_branches": 6,
+        "passed_branches": 6,
+        "failed_branches": 0
+      }
+    },
+    "round_02_execution.json": {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_full_probe/runs/weather_rng_full_001/reports/round_02_execution.json",
+      "sha256": "53db577fc42950475cf87ada7b3fe57d8b37b6effc48b100953eed75eafce43e",
+      "status": "passed",
+      "summary": null
+    },
+    "round_02_equivalence.json": {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_full_probe/runs/weather_rng_full_001/reports/round_02_equivalence.json",
+      "sha256": "354ee59e2eb5114e63528f14321c2b7b1ba87567247c17e1258a13c799207f0e",
+      "status": "equivalent_exact",
+      "summary": null,
+      "compared_branches": 6,
+      "identity_matched_branches": 6,
+      "physical_fields_exact_branches": 6,
+      "physical_and_relative_clocks_exact_branches": 6
+    },
+    "round_02_formal_clocks.json": {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_full_probe/runs/weather_rng_full_001/reports/round_02_formal_clocks.json",
+      "sha256": "16d507bad2a92f162bda7d5eab94847454a779d9f0a401e55d17dbbab24cfc78",
+      "status": "passed",
+      "summary": null
+    }
+  },
+  "source": {
+    "candidate_archive_sha256": "20bba5d8d1fb2de85d84ca45c97f24862fb275c38457de0d6895c2ccdaff2613",
+    "capture_contract_sha256": "a8657790986e9769ec737f18b0f4e2029da2fee1bf7e122dadcb3901c41c40dd",
+    "engine_sha256": "4048d628742daaff97557c8e2f6a4c12a09305cb4ed13c7b81c983238dc79a19",
+    "server_sha256": "a812f039d600390c9476581df5804f623f2054be1bebe75211bc628e8e9ea928",
+    "native_binary_sha256": "03bcd413615fa1fc61a5b846342dbdc4e6b3541320a40d6bf17ff927039731f9",
+    "runner_sha256": "03b0c59eed7aa898695e3c9b346a7d32b3e9582bfa1282adf0675b4b2474d821",
+    "config_sha256": "e2089a500b41eb07df35452d686bf4de3d63aede83cf0e4e087d60bc0dcc18c7",
+    "status_path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_full_probe/runs/weather_rng_full_001/status.json",
+    "status_sha256": "d434736452dc49c70eb9187e1d267fa65668b157f642d37b564762327aa85a48",
+    "identity_path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_full_probe/runs/weather_rng_full_001/identity.json",
+    "identity_sha256": "6a29458462093a0c6ebac15051233e7ba9f58f1e9db9089e238eb585a17734ec"
+  },
+  "weather_trace_audits": {
+    "physics/maintain": {
+      "status": "passed",
+      "observed_selected_events": 0,
+      "observed_weather_calls": 0,
+      "end_record_present": false,
+      "truncated": false,
+      "all_contexts_valid": true,
+      "activity_required": false,
+      "sha256": "ef967c2cdba4b0ed04805f0080da31fe9c84fad7910b7bd3ce765fd18266024a"
+    },
+    "physics/commit_go": {
+      "status": "passed",
+      "observed_selected_events": 0,
+      "observed_weather_calls": 0,
+      "end_record_present": false,
+      "truncated": false,
+      "all_contexts_valid": true,
+      "activity_required": false,
+      "sha256": "71249b75913aa26cc60cf5a8491e1872dfaa27a796678cd3a48582eeb52d70a4"
+    },
+    "physics/commit_delayed": {
+      "status": "passed",
+      "observed_selected_events": 0,
+      "observed_weather_calls": 0,
+      "end_record_present": false,
+      "truncated": false,
+      "all_contexts_valid": true,
+      "activity_required": false,
+      "sha256": "860c3bd68d9c63c76fa8f180399e4034de882643456e3fcc037f519f2a55b3be"
+    },
+    "physics/stop_hold": {
+      "status": "passed",
+      "observed_selected_events": 0,
+      "observed_weather_calls": 0,
+      "end_record_present": false,
+      "truncated": false,
+      "all_contexts_valid": true,
+      "activity_required": false,
+      "sha256": "228886c379c5fdc15812eb516ca8ba943ae1b1ea33fb2ffad3c66096fd99743d"
+    },
+    "physics/yield_wait": {
+      "status": "passed",
+      "observed_selected_events": 0,
+      "observed_weather_calls": 0,
+      "end_record_present": false,
+      "truncated": false,
+      "all_contexts_valid": true,
+      "activity_required": false,
+      "sha256": "d375f7ebc3b593f1a3ecbe1cd1af8d6675c6be38c1d9cda12b258526ecd3a62a"
+    },
+    "physics/maintain_repeat": {
+      "status": "passed",
+      "observed_selected_events": 0,
+      "observed_weather_calls": 0,
+      "end_record_present": false,
+      "truncated": false,
+      "all_contexts_valid": true,
+      "activity_required": false,
+      "sha256": "be80ac7f91e541e6c19017e9ab8666c17d26bb1fd3d48a6de842a53dd2cbe398"
+    },
+    "round_01/maintain": {
+      "status": "passed",
+      "observed_selected_events": 42,
+      "observed_weather_calls": 42,
+      "end_record_present": false,
+      "truncated": false,
+      "all_contexts_valid": true,
+      "activity_required": true,
+      "sha256": "7aabdb2632c11f501471f729f186120c43c91b15019a896649a175b878d2c589"
+    },
+    "round_01/maintain_repeat": {
+      "status": "passed",
+      "observed_selected_events": 42,
+      "observed_weather_calls": 42,
+      "end_record_present": false,
+      "truncated": false,
+      "all_contexts_valid": true,
+      "activity_required": true,
+      "sha256": "57aaf331c166ff1393d599c9bf552d6269e55124b088ed8b028d18080a31bd06"
+    },
+    "round_01/commit_go": {
+      "status": "passed",
+      "observed_selected_events": 42,
+      "observed_weather_calls": 42,
+      "end_record_present": false,
+      "truncated": false,
+      "all_contexts_valid": true,
+      "activity_required": true,
+      "sha256": "a926b6e0ee4e8cc03c20f38108918eb37ef4fae0e95f1e5d0074819c5c490bbe"
+    },
+    "round_01/commit_delayed": {
+      "status": "passed",
+      "observed_selected_events": 42,
+      "observed_weather_calls": 42,
+      "end_record_present": false,
+      "truncated": false,
+      "all_contexts_valid": true,
+      "activity_required": true,
+      "sha256": "c063545bd742f16b11a1a0aafa390c30275631d1326b91bdc0045de906ca1d50"
+    },
+    "round_01/stop_hold": {
+      "status": "passed",
+      "observed_selected_events": 42,
+      "observed_weather_calls": 42,
+      "end_record_present": false,
+      "truncated": false,
+      "all_contexts_valid": true,
+      "activity_required": true,
+      "sha256": "3000533a8c0f69678e5ba2d35286fb87532470a099c5668b58a74965ab753ef9"
+    },
+    "round_01/yield_wait": {
+      "status": "passed",
+      "observed_selected_events": 42,
+      "observed_weather_calls": 42,
+      "end_record_present": false,
+      "truncated": false,
+      "all_contexts_valid": true,
+      "activity_required": true,
+      "sha256": "d899764afacd42f9727810875ec627166ab2d17c4151d311f7e75601f68abc75"
+    },
+    "round_02/maintain": {
+      "status": "passed",
+      "observed_selected_events": 42,
+      "observed_weather_calls": 42,
+      "end_record_present": false,
+      "truncated": false,
+      "all_contexts_valid": true,
+      "activity_required": true,
+      "sha256": "fa29bae7b18d056c3510d703f789d62c62e7a03bb46d472ccca4e84adc8fd339"
+    },
+    "round_02/maintain_repeat": {
+      "status": "passed",
+      "observed_selected_events": 42,
+      "observed_weather_calls": 42,
+      "end_record_present": false,
+      "truncated": false,
+      "all_contexts_valid": true,
+      "activity_required": true,
+      "sha256": "579582c37493e31e6d2cf86be6ef148b4996337a65314a5d6a2a7d0f76931198"
+    },
+    "round_02/commit_go": {
+      "status": "passed",
+      "observed_selected_events": 42,
+      "observed_weather_calls": 42,
+      "end_record_present": false,
+      "truncated": false,
+      "all_contexts_valid": true,
+      "activity_required": true,
+      "sha256": "6f9317d2b73215ac530e3a4add155d7ad7aa12a4c9fa1f5e0b214a994c4b4661"
+    },
+    "round_02/commit_delayed": {
+      "status": "passed",
+      "observed_selected_events": 42,
+      "observed_weather_calls": 42,
+      "end_record_present": false,
+      "truncated": false,
+      "all_contexts_valid": true,
+      "activity_required": true,
+      "sha256": "69f19c6949daf54563768d68bd0dc9d64076d26c4a372139298e0a87e213b8c6"
+    },
+    "round_02/stop_hold": {
+      "status": "passed",
+      "observed_selected_events": 42,
+      "observed_weather_calls": 42,
+      "end_record_present": false,
+      "truncated": false,
+      "all_contexts_valid": true,
+      "activity_required": true,
+      "sha256": "05eb05622ad58ebd39d59262832071b10172c9993bf9dadbd0dcbb47dc8d2263"
+    },
+    "round_02/yield_wait": {
+      "status": "passed",
+      "observed_selected_events": 42,
+      "observed_weather_calls": 42,
+      "end_record_present": false,
+      "truncated": false,
+      "all_contexts_valid": true,
+      "activity_required": true,
+      "sha256": "40f6be85688e54b26a8ba3df540d14ed3232bc1c47038729106da93ed9df958e"
+    }
+  },
+  "fresh_dry_readonly_identity_check": {
+    "status": "passed",
+    "package_files_checked": 74,
+    "input_files_checked": 7,
+    "runner_sha256": "394c8d970bfc1152707d4f94ab662c66578f3cdd638d80c575ecf27073c85e15",
+    "config_sha256": "2e5a23a6cee3c3e08f461e1fb864cc20817afebd98348383081826b421753a68",
+    "native_calls": 0,
+    "dry_qualification_result": "qualified; see dry_qualification"
+  },
+  "pending": [],
+  "updated_utc": "2026-11-04T05:43:10.595022+00:00",
+  "dry_qualification": {
+    "scope": "Town05 original fixed scene_0032, no-rain light_fog; historical shadow failure case",
+    "status": "qualified_single_fixed_scene",
+    "qualified_utc": "2026-11-04T05:23:06.366114+00:00",
+    "cleanup_verified": true,
+    "native_epochs": 18,
+    "raw_rgb_comparison_count": 552,
+    "pixel_exact_pairs": 35,
+    "maxima": {
+      "mae_0_255": 0.015004166666666667,
+      "max_tile_mae_0_255": 0.08243333333333333,
+      "fraction_any_channel_gt_8": 7.638888888888888e-06,
+      "fraction_any_channel_gt_32": 0.0,
+      "max_channel_difference_0_255": 30
+    },
+    "metrics": {
+      "round_01_render.json": {
+        "pairs": 198,
+        "passed_pairs": 198,
+        "pixel_exact_pairs": 9,
+        "maxima": {
+          "mae_0_255": 0.0035997685185185186,
+          "max_tile_mae_0_255": 0.03716666666666667,
+          "fraction_any_channel_gt_8": 3.4722222222222224e-06,
+          "fraction_any_channel_gt_32": 0.0,
+          "max_channel_difference_0_255": 15
+        },
+        "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_dry_probe/runs/weather_rng_dry_town05_full_001/reports/round_01_render.json",
+        "sha256": "951f53e406184a4115c845e3ca2b16d0d78aa8a04395673669511da481324136",
+        "thresholds": {
+          "mae_0_255": 0.25,
+          "max_tile_mae_0_255": 4.0,
+          "fraction_any_channel_gt_32": 0.001,
+          "fraction_any_channel_gt_8": 0.005
+        },
+        "tile_size_pixels": 100
+      },
+      "round_02_render.json": {
+        "pairs": 198,
+        "passed_pairs": 198,
+        "pixel_exact_pairs": 12,
+        "maxima": {
+          "mae_0_255": 0.015004166666666667,
+          "max_tile_mae_0_255": 0.08243333333333333,
+          "fraction_any_channel_gt_8": 7.638888888888888e-06,
+          "fraction_any_channel_gt_32": 0.0,
+          "max_channel_difference_0_255": 30
+        },
+        "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_dry_probe/runs/weather_rng_dry_town05_full_001/reports/round_02_render.json",
+        "sha256": "e2bbdc02420fac6ea18eb639f0a80add6bb3ad1293f0c73f0f7d790059063c38",
+        "thresholds": {
+          "mae_0_255": 0.25,
+          "max_tile_mae_0_255": 4.0,
+          "fraction_any_channel_gt_32": 0.001,
+          "fraction_any_channel_gt_8": 0.005
+        },
+        "tile_size_pixels": 100
+      },
+      "cross_round_repeat.json": {
+        "pairs": 156,
+        "passed_pairs": 156,
+        "pixel_exact_pairs": 14,
+        "maxima": {
+          "mae_0_255": 0.015002777777777778,
+          "max_tile_mae_0_255": 0.08243333333333333,
+          "fraction_any_channel_gt_8": 7.638888888888888e-06,
+          "fraction_any_channel_gt_32": 0.0,
+          "max_channel_difference_0_255": 30
+        },
+        "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_dry_probe/runs/weather_rng_dry_town05_full_001/reports/cross_round_repeat.json",
+        "sha256": "3e6b129cec17819e5f9c62bc67b6c647334351c17383e18247d04dd827ed6e2d",
+        "thresholds": {
+          "mae_0_255": 0.25,
+          "max_tile_mae_0_255": 4.0,
+          "fraction_any_channel_gt_32": 0.001,
+          "fraction_any_channel_gt_8": 0.005
+        },
+        "tile_size_pixels": 100
+      }
+    },
+    "supporting_reports": {
+      "physics_execution.json": {
+        "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_dry_probe/runs/weather_rng_dry_town05_full_001/reports/physics_execution.json",
+        "sha256": "5a02c773a3b0c8ac5d6d9054607501183256fc7165395c590d967457f8360f8d",
+        "status": "passed",
+        "summary": null
+      },
+      "round_01_protocol.json": {
+        "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_dry_probe/runs/weather_rng_dry_town05_full_001/reports/round_01_protocol.json",
+        "sha256": "fb43038b408009ddf7c31e2dde81e6387660c592724f8c9ec83235d0de885a80",
+        "status": "passed",
+        "summary": {
+          "expected_branches": 6,
+          "passed_branches": 6,
+          "failed_branches": 0
+        }
+      },
+      "round_01_execution.json": {
+        "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_dry_probe/runs/weather_rng_dry_town05_full_001/reports/round_01_execution.json",
+        "sha256": "5470ee864908b2a16332c45def4567d2103519de7212feb72e4c0836e40ddf7e",
+        "status": "passed",
+        "summary": null
+      },
+      "round_01_equivalence.json": {
+        "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_dry_probe/runs/weather_rng_dry_town05_full_001/reports/round_01_equivalence.json",
+        "sha256": "63794fece78e2ee506883f48b410cc52de0422bb847e6975c6521f54f294c544",
+        "status": "equivalent_exact",
+        "summary": null,
+        "compared_branches": 6,
+        "identity_matched_branches": 6,
+        "physical_fields_exact_branches": 6,
+        "physical_and_relative_clocks_exact_branches": 6
+      },
+      "round_01_formal_clocks.json": {
+        "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_dry_probe/runs/weather_rng_dry_town05_full_001/reports/round_01_formal_clocks.json",
+        "sha256": "105dc6df87f3a7ac48c52803b733bea3473e8aa0eccb4d06a613ae31de73e3f3",
+        "status": "passed",
+        "summary": null
+      },
+      "round_02_protocol.json": {
+        "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_dry_probe/runs/weather_rng_dry_town05_full_001/reports/round_02_protocol.json",
+        "sha256": "e674070e65b63beabe1de33c7e1e7bc9c2db926ec00261ff7d8d811c6ca33531",
+        "status": "passed",
+        "summary": {
+          "expected_branches": 6,
+          "passed_branches": 6,
+          "failed_branches": 0
+        }
+      },
+      "round_02_execution.json": {
+        "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_dry_probe/runs/weather_rng_dry_town05_full_001/reports/round_02_execution.json",
+        "sha256": "af161ddcbc94b465e8bef81aa85ac9cd24481d7af76f561088bcf390b3dbe9c0",
+        "status": "passed",
+        "summary": null
+      },
+      "round_02_equivalence.json": {
+        "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_dry_probe/runs/weather_rng_dry_town05_full_001/reports/round_02_equivalence.json",
+        "sha256": "6b71788723702a870e55b64fb877d65ef0eda062b373a778ce806efd87094c26",
+        "status": "equivalent_exact",
+        "summary": null,
+        "compared_branches": 6,
+        "identity_matched_branches": 6,
+        "physical_fields_exact_branches": 6,
+        "physical_and_relative_clocks_exact_branches": 6
+      },
+      "round_02_formal_clocks.json": {
+        "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_dry_probe/runs/weather_rng_dry_town05_full_001/reports/round_02_formal_clocks.json",
+        "sha256": "2cb3786a50bb3a12e49816990e2dccc3b01ab2c8d57a41332a5d6120828b2058",
+        "status": "passed",
+        "summary": null
+      }
+    },
+    "weather": {
+      "cloudiness": 55.0,
+      "precipitation": 0.0,
+      "precipitation_deposits": 0.0,
+      "wind_intensity": 0.0,
+      "sun_azimuth_angle": 60.0,
+      "sun_altitude_angle": 30.0,
+      "fog_density": 12.0,
+      "fog_distance": 30.0,
+      "wetness": 0.0,
+      "fog_falloff": 0.2,
+      "scattering_intensity": 1.0,
+      "mie_scattering_scale": 0.029999999329447746,
+      "rayleigh_scattering_scale": 0.03310000151395798,
+      "dust_storm": 0.0
+    },
+    "source": {
+      "candidate_archive_sha256": "20bba5d8d1fb2de85d84ca45c97f24862fb275c38457de0d6895c2ccdaff2613",
+      "capture_contract_sha256": "a8657790986e9769ec737f18b0f4e2029da2fee1bf7e122dadcb3901c41c40dd",
+      "engine_sha256": "4048d628742daaff97557c8e2f6a4c12a09305cb4ed13c7b81c983238dc79a19",
+      "server_sha256": "a812f039d600390c9476581df5804f623f2054be1bebe75211bc628e8e9ea928",
+      "native_binary_sha256": "03bcd413615fa1fc61a5b846342dbdc4e6b3541320a40d6bf17ff927039731f9",
+      "runner_sha256": "394c8d970bfc1152707d4f94ab662c66578f3cdd638d80c575ecf27073c85e15",
+      "status_path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_dry_probe/runs/weather_rng_dry_town05_full_001/status.json",
+      "status_sha256": "19801d01a119a5d510a6b6e09b6d108f4eb3dccf9c49f35cb3dcc61738e6e6ab",
+      "identity_path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_dry_probe/runs/weather_rng_dry_town05_full_001/identity.json",
+      "identity_sha256": "4e076a3a12e3b692fec12dd9dd0bd23781a1babd02dec68deb0efa8c5a703513"
+    },
+    "weather_draw_counts": {
+      "physics/maintain": 0,
+      "physics/nominal": 0,
+      "physics/decelerate": 0,
+      "physics/stop_hold": 0,
+      "physics/yield_wait": 0,
+      "physics/maintain_repeat": 0,
+      "round_01/maintain": 0,
+      "round_01/maintain_repeat": 0,
+      "round_01/nominal": 0,
+      "round_01/decelerate": 0,
+      "round_01/stop_hold": 0,
+      "round_01/yield_wait": 0,
+      "round_02/maintain": 0,
+      "round_02/maintain_repeat": 0,
+      "round_02/nominal": 0,
+      "round_02/decelerate": 0,
+      "round_02/stop_hold": 0,
+      "round_02/yield_wait": 0
+    },
+    "passive_holds": [
+      {
+        "task": "physics/maintain_repeat",
+        "requested_wall_seconds": 15,
+        "observed_wall_seconds": 15.000802117865533,
+        "frame": 20,
+        "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_dry_probe/runs/weather_rng_dry_town05_full_001/native_attempts/physics/maintain_repeat/attempt_00/passive_hold.json",
+        "sha256": "13c10e2315ad33b09fd824920b20149f32174c088c8a8317dc802fe1acc544ad"
+      },
+      {
+        "task": "round_01/maintain_repeat",
+        "requested_wall_seconds": 15,
+        "observed_wall_seconds": 15.000579325016588,
+        "frame": 20,
+        "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_dry_probe/runs/weather_rng_dry_town05_full_001/native_attempts/round_01/maintain_repeat/attempt_00/passive_hold.json",
+        "sha256": "96829cb9b2954355a9d3ad300ac9b745d2181fc83075c4ed551ba218fafc7ec5"
+      },
+      {
+        "task": "round_02/maintain_repeat",
+        "requested_wall_seconds": 15,
+        "observed_wall_seconds": 15.00066023087129,
+        "frame": 20,
+        "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_dry_probe/runs/weather_rng_dry_town05_full_001/native_attempts/round_02/maintain_repeat/attempt_00/passive_hold.json",
+        "sha256": "8f194ec1aa3fb7b42f3f88b037b4c9afde00ae0d27b2065f950ef33e30ba3f13"
+      }
+    ]
+  },
+  "combined_validation": {
+    "native_epochs": 36,
+    "raw_rgb_comparison_count": 1104,
+    "passed_comparisons": 1104,
+    "pixel_exact_pairs": 282,
+    "maxima": {
+      "mae_0_255": 0.015004166666666667,
+      "max_tile_mae_0_255": 0.08243333333333333,
+      "fraction_any_channel_gt_8": 7.638888888888888e-06,
+      "fraction_any_channel_gt_32": 6.944444444444445e-07,
+      "max_channel_difference_0_255": 45
+    },
+    "rain_case": {
+      "scope": "Town04 original fixed scene_0002, rain20/wind10",
+      "status": "qualified_single_fixed_scene",
+      "qualified_utc": "2026-11-04T04:59:15.761780+00:00",
+      "cleanup_verified": true,
+      "native_epochs": 18,
+      "raw_rgb_comparison_count": 552,
+      "pixel_exact_pairs": 247,
+      "maxima": {
+        "mae_0_255": 5.3935185185185184e-05,
+        "max_tile_mae_0_255": 0.006866666666666667,
+        "fraction_any_channel_gt_8": 2.0833333333333334e-06,
+        "fraction_any_channel_gt_32": 6.944444444444445e-07,
+        "max_channel_difference_0_255": 45
+      },
+      "metrics": {
+        "round_01_render.json": {
+          "pairs": 198,
+          "passed_pairs": 198,
+          "pixel_exact_pairs": 111,
+          "maxima": {
+            "mae_0_255": 5.3935185185185184e-05,
+            "max_tile_mae_0_255": 0.006866666666666667,
+            "fraction_any_channel_gt_8": 2.0833333333333334e-06,
+            "fraction_any_channel_gt_32": 6.944444444444445e-07,
+            "max_channel_difference_0_255": 45
+          },
+          "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_full_probe/runs/weather_rng_full_001/reports/round_01_render.json",
+          "sha256": "e7f39dc34e26f12258250b85342d72dcf7746734c0634d65516644b4a2cd77de",
+          "thresholds": {
+            "mae_0_255": 0.25,
+            "max_tile_mae_0_255": 4.0,
+            "fraction_any_channel_gt_32": 0.001,
+            "fraction_any_channel_gt_8": 0.005
+          },
+          "tile_size_pixels": 100
+        },
+        "round_02_render.json": {
+          "pairs": 198,
+          "passed_pairs": 198,
+          "pixel_exact_pairs": 65,
+          "maxima": {
+            "mae_0_255": 2.4768518518518518e-05,
+            "max_tile_mae_0_255": 0.0017333333333333333,
+            "fraction_any_channel_gt_8": 6.944444444444445e-07,
+            "fraction_any_channel_gt_32": 0.0,
+            "max_channel_difference_0_255": 9
+          },
+          "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_full_probe/runs/weather_rng_full_001/reports/round_02_render.json",
+          "sha256": "99ba17291b5c57fc3b17513ea42dcc7caee1b9b7b0c6aa350eb883cfc57cc04f",
+          "thresholds": {
+            "mae_0_255": 0.25,
+            "max_tile_mae_0_255": 4.0,
+            "fraction_any_channel_gt_32": 0.001,
+            "fraction_any_channel_gt_8": 0.005
+          },
+          "tile_size_pixels": 100
+        },
+        "cross_round_repeat.json": {
+          "pairs": 156,
+          "passed_pairs": 156,
+          "pixel_exact_pairs": 71,
+          "maxima": {
+            "mae_0_255": 5.3935185185185184e-05,
+            "max_tile_mae_0_255": 0.006866666666666667,
+            "fraction_any_channel_gt_8": 2.0833333333333334e-06,
+            "fraction_any_channel_gt_32": 6.944444444444445e-07,
+            "max_channel_difference_0_255": 45
+          },
+          "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_full_probe/runs/weather_rng_full_001/reports/cross_round_repeat.json",
+          "sha256": "9d6a71f1d1c58b6d0d72928ba5de972807697e7dc2271769af076ea31ff3d4b7",
+          "thresholds": {
+            "mae_0_255": 0.25,
+            "max_tile_mae_0_255": 4.0,
+            "fraction_any_channel_gt_32": 0.001,
+            "fraction_any_channel_gt_8": 0.005
+          },
+          "tile_size_pixels": 100
+        }
+      },
+      "supporting_reports": {
+        "physics_execution.json": {
+          "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_full_probe/runs/weather_rng_full_001/reports/physics_execution.json",
+          "sha256": "0640e87000dbf50966ba0d8ea4753ed37a5cdf8eaf7fa490dc3b75ff4b8dc987",
+          "status": "passed",
+          "summary": null
+        },
+        "round_01_protocol.json": {
+          "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_full_probe/runs/weather_rng_full_001/reports/round_01_protocol.json",
+          "sha256": "6d67bd59be83655f5535b2c2f355570eee015c3e6b6f57d0f24d30e0c34ecad0",
+          "status": "passed",
+          "summary": {
+            "expected_branches": 6,
+            "passed_branches": 6,
+            "failed_branches": 0
+          }
+        },
+        "round_01_execution.json": {
+          "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_full_probe/runs/weather_rng_full_001/reports/round_01_execution.json",
+          "sha256": "44c6b4542e3b5613887a26217127280489a299795b854d6ca6a091b8e3a0f680",
+          "status": "passed",
+          "summary": null
+        },
+        "round_01_equivalence.json": {
+          "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_full_probe/runs/weather_rng_full_001/reports/round_01_equivalence.json",
+          "sha256": "75ebfce5317f05bc8d44c478f259aa393e1d522465b31aa30b38a72d5f794df3",
+          "status": "equivalent_exact",
+          "summary": null,
+          "compared_branches": 6,
+          "identity_matched_branches": 6,
+          "physical_fields_exact_branches": 6,
+          "physical_and_relative_clocks_exact_branches": 6
+        },
+        "round_01_formal_clocks.json": {
+          "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_full_probe/runs/weather_rng_full_001/reports/round_01_formal_clocks.json",
+          "sha256": "101e540a27f44deb54319838f378d9388a09607c5da6bffff2ddf8da0855a4be",
+          "status": "passed",
+          "summary": null
+        },
+        "round_02_protocol.json": {
+          "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_full_probe/runs/weather_rng_full_001/reports/round_02_protocol.json",
+          "sha256": "9e4480221c62de92a85896c26fb80e1ccba05eb5fe96b2c11b7b3d418c16112b",
+          "status": "passed",
+          "summary": {
+            "expected_branches": 6,
+            "passed_branches": 6,
+            "failed_branches": 0
+          }
+        },
+        "round_02_execution.json": {
+          "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_full_probe/runs/weather_rng_full_001/reports/round_02_execution.json",
+          "sha256": "53db577fc42950475cf87ada7b3fe57d8b37b6effc48b100953eed75eafce43e",
+          "status": "passed",
+          "summary": null
+        },
+        "round_02_equivalence.json": {
+          "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_full_probe/runs/weather_rng_full_001/reports/round_02_equivalence.json",
+          "sha256": "354ee59e2eb5114e63528f14321c2b7b1ba87567247c17e1258a13c799207f0e",
+          "status": "equivalent_exact",
+          "summary": null,
+          "compared_branches": 6,
+          "identity_matched_branches": 6,
+          "physical_fields_exact_branches": 6,
+          "physical_and_relative_clocks_exact_branches": 6
+        },
+        "round_02_formal_clocks.json": {
+          "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_full_probe/runs/weather_rng_full_001/reports/round_02_formal_clocks.json",
+          "sha256": "16d507bad2a92f162bda7d5eab94847454a779d9f0a401e55d17dbbab24cfc78",
+          "status": "passed",
+          "summary": null
+        }
+      },
+      "weather": {
+        "cloudiness": 80.0,
+        "precipitation": 20.0,
+        "precipitation_deposits": 10.0,
+        "wind_intensity": 10.0,
+        "sun_azimuth_angle": 100.0,
+        "sun_altitude_angle": 40.0,
+        "fog_density": 2.0,
+        "fog_distance": 0.75,
+        "wetness": 45.0,
+        "fog_falloff": 0.10000000149011612,
+        "scattering_intensity": 1.0,
+        "mie_scattering_scale": 0.029999999329447746,
+        "rayleigh_scattering_scale": 0.03310000151395798,
+        "dust_storm": 0.0
+      },
+      "source": {
+        "candidate_archive_sha256": "20bba5d8d1fb2de85d84ca45c97f24862fb275c38457de0d6895c2ccdaff2613",
+        "capture_contract_sha256": "a8657790986e9769ec737f18b0f4e2029da2fee1bf7e122dadcb3901c41c40dd",
+        "engine_sha256": "4048d628742daaff97557c8e2f6a4c12a09305cb4ed13c7b81c983238dc79a19",
+        "server_sha256": "a812f039d600390c9476581df5804f623f2054be1bebe75211bc628e8e9ea928",
+        "native_binary_sha256": "03bcd413615fa1fc61a5b846342dbdc4e6b3541320a40d6bf17ff927039731f9",
+        "runner_sha256": "03b0c59eed7aa898695e3c9b346a7d32b3e9582bfa1282adf0675b4b2474d821",
+        "status_path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_full_probe/runs/weather_rng_full_001/status.json",
+        "status_sha256": "d434736452dc49c70eb9187e1d267fa65668b157f642d37b564762327aa85a48",
+        "identity_path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_full_probe/runs/weather_rng_full_001/identity.json",
+        "identity_sha256": "6a29458462093a0c6ebac15051233e7ba9f58f1e9db9089e238eb585a17734ec"
+      },
+      "weather_draw_counts": {
+        "physics/maintain": 0,
+        "physics/commit_go": 0,
+        "physics/commit_delayed": 0,
+        "physics/stop_hold": 0,
+        "physics/yield_wait": 0,
+        "physics/maintain_repeat": 0,
+        "round_01/maintain": 42,
+        "round_01/maintain_repeat": 42,
+        "round_01/commit_go": 42,
+        "round_01/commit_delayed": 42,
+        "round_01/stop_hold": 42,
+        "round_01/yield_wait": 42,
+        "round_02/maintain": 42,
+        "round_02/maintain_repeat": 42,
+        "round_02/commit_go": 42,
+        "round_02/commit_delayed": 42,
+        "round_02/stop_hold": 42,
+        "round_02/yield_wait": 42
+      },
+      "passive_holds": []
+    },
+    "causal_scope": "Rain shared-RNG mechanism is directly observed. Town05 validates the combined ready-sync and pinned-library setup with zero Rain draws; this does not attribute dry shadow improvement to weather RNG or prove universal rendering determinism.",
+    "ordinary_comparisons": 198,
+    "all_qualified_comparisons": 1302,
+    "ordinary_integration_status": "passed"
+  },
+  "native_manifest_status_note": "native_qualified:false remains frozen build-time metadata; qualification is established by separately hashed native reports, not by rewriting the tested native manifest.",
+  "ordinary_pipeline_qualification": {
+    "status": "passed",
+    "finished_utc": "2026-11-04T05:38:06.765561+00:00",
+    "cleanup_verified": true,
+    "production_resumed": false,
+    "scope": "One fixed Town04 rain20/wind10 scene through ordinary production physics/capture/export/seal stage functions; no special-runner acceptance bypass",
+    "native_epochs": 7,
+    "physics_branch_count": 6,
+    "rgb_branch_count": 6,
+    "raw_rgb_comparison_count": 198,
+    "passed_comparisons": 198,
+    "pixel_exact_pairs": 101,
+    "maxima": {
+      "mae_0_255": 4.837962962962963e-05,
+      "max_tile_mae_0_255": 0.006866666666666667,
+      "fraction_any_channel_gt_8": 2.0833333333333334e-06,
+      "fraction_any_channel_gt_32": 6.944444444444445e-07,
+      "max_channel_difference_0_255": 45
+    },
+    "thresholds": {
+      "mae_0_255": 0.25,
+      "max_tile_mae_0_255": 4.0,
+      "fraction_any_channel_gt_32": 0.001,
+      "fraction_any_channel_gt_8": 0.005
+    },
+    "tile_size_pixels": 100,
+    "native_proofs": {
+      "commit_delayed.json": {
+        "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/ordinary_smoke/attempt/reports/native_weather/commit_delayed.json",
+        "sha256": "dcd469d09eda80bd1e1a9f4d14e8cae7e9e03f4d258f2d2a90ba5631041af539",
+        "audit": {
+          "status": "passed",
+          "selected_events": 42,
+          "weather_calls": 42,
+          "require_weather": true,
+          "footer_present": false,
+          "truncated": false
+        },
+        "engine": {
+          "pid": 705019,
+          "start_ticks": 301787709,
+          "argv": [
+            "/root/autodl-tmp/effect-jepa/data/carla/CarlaUE4/Binaries/Linux/CarlaUE4-Linux-Shipping",
+            "CarlaUE4",
+            "-RenderOffScreen",
+            "-quality-level=Epic",
+            "-carla-rpc-port=2000",
+            "-nosound",
+            "-FixedSeed",
+            "-benchmark",
+            "FPS=20"
+          ]
+        },
+        "manifest_sha256": "ef80751ef63f2fdbfff8bc711437f733cb81cc6cee7066284f5dd572cf1f9189"
+      },
+      "commit_go.json": {
+        "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/ordinary_smoke/attempt/reports/native_weather/commit_go.json",
+        "sha256": "7716215cc655c7ffc8db1b9c46fc9235a8356a2d06e61969aa8d2d9b53bb03eb",
+        "audit": {
+          "status": "passed",
+          "selected_events": 42,
+          "weather_calls": 42,
+          "require_weather": true,
+          "footer_present": false,
+          "truncated": false
+        },
+        "engine": {
+          "pid": 703724,
+          "start_ticks": 301778443,
+          "argv": [
+            "/root/autodl-tmp/effect-jepa/data/carla/CarlaUE4/Binaries/Linux/CarlaUE4-Linux-Shipping",
+            "CarlaUE4",
+            "-RenderOffScreen",
+            "-quality-level=Epic",
+            "-carla-rpc-port=2000",
+            "-nosound",
+            "-FixedSeed",
+            "-benchmark",
+            "FPS=20"
+          ]
+        },
+        "manifest_sha256": "ef80751ef63f2fdbfff8bc711437f733cb81cc6cee7066284f5dd572cf1f9189"
+      },
+      "maintain.json": {
+        "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/ordinary_smoke/attempt/reports/native_weather/maintain.json",
+        "sha256": "1ef31aedfd063307702baba18e4551a7f5ad67012957ec1c476a1a7efcc3e42c",
+        "audit": {
+          "status": "passed",
+          "selected_events": 42,
+          "weather_calls": 42,
+          "require_weather": true,
+          "footer_present": false,
+          "truncated": false
+        },
+        "engine": {
+          "pid": 701063,
+          "start_ticks": 301761993,
+          "argv": [
+            "/root/autodl-tmp/effect-jepa/data/carla/CarlaUE4/Binaries/Linux/CarlaUE4-Linux-Shipping",
+            "CarlaUE4",
+            "-RenderOffScreen",
+            "-quality-level=Epic",
+            "-carla-rpc-port=2000",
+            "-nosound",
+            "-FixedSeed",
+            "-benchmark",
+            "FPS=20"
+          ]
+        },
+        "manifest_sha256": "ef80751ef63f2fdbfff8bc711437f733cb81cc6cee7066284f5dd572cf1f9189"
+      },
+      "maintain_repeat.json": {
+        "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/ordinary_smoke/attempt/reports/native_weather/maintain_repeat.json",
+        "sha256": "9b0faa7fc3ace59f815af95f3becd6ca74b1cb8212de25ba2798096dc4bd211d",
+        "audit": {
+          "status": "passed",
+          "selected_events": 42,
+          "weather_calls": 42,
+          "require_weather": true,
+          "footer_present": false,
+          "truncated": false
+        },
+        "engine": {
+          "pid": 702391,
+          "start_ticks": 301769285,
+          "argv": [
+            "/root/autodl-tmp/effect-jepa/data/carla/CarlaUE4/Binaries/Linux/CarlaUE4-Linux-Shipping",
+            "CarlaUE4",
+            "-RenderOffScreen",
+            "-quality-level=Epic",
+            "-carla-rpc-port=2000",
+            "-nosound",
+            "-FixedSeed",
+            "-benchmark",
+            "FPS=20"
+          ]
+        },
+        "manifest_sha256": "ef80751ef63f2fdbfff8bc711437f733cb81cc6cee7066284f5dd572cf1f9189"
+      },
+      "physics.json": {
+        "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/ordinary_smoke/attempt/reports/native_weather/physics.json",
+        "sha256": "fda02b3d9509d5173c0ccd5be8197557e41d04a48e6cab309d3215c456d17eef",
+        "audit": {
+          "status": "passed",
+          "selected_events": 0,
+          "weather_calls": 0,
+          "require_weather": false,
+          "footer_present": false,
+          "truncated": false
+        },
+        "engine": {
+          "pid": 698612,
+          "start_ticks": 301752744,
+          "argv": [
+            "/root/autodl-tmp/effect-jepa/data/carla/CarlaUE4/Binaries/Linux/CarlaUE4-Linux-Shipping",
+            "CarlaUE4",
+            "-RenderOffScreen",
+            "-quality-level=Epic",
+            "-carla-rpc-port=2000",
+            "-nosound",
+            "-FixedSeed",
+            "-benchmark",
+            "FPS=20"
+          ]
+        },
+        "manifest_sha256": "ef80751ef63f2fdbfff8bc711437f733cb81cc6cee7066284f5dd572cf1f9189"
+      },
+      "stop_hold.json": {
+        "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/ordinary_smoke/attempt/reports/native_weather/stop_hold.json",
+        "sha256": "e581b1202aac3d24c8f4e46b6b83a30abeb56ca4d4da17082e84834685391ad2",
+        "audit": {
+          "status": "passed",
+          "selected_events": 42,
+          "weather_calls": 42,
+          "require_weather": true,
+          "footer_present": false,
+          "truncated": false
+        },
+        "engine": {
+          "pid": 706312,
+          "start_ticks": 301796705,
+          "argv": [
+            "/root/autodl-tmp/effect-jepa/data/carla/CarlaUE4/Binaries/Linux/CarlaUE4-Linux-Shipping",
+            "CarlaUE4",
+            "-RenderOffScreen",
+            "-quality-level=Epic",
+            "-carla-rpc-port=2000",
+            "-nosound",
+            "-FixedSeed",
+            "-benchmark",
+            "FPS=20"
+          ]
+        },
+        "manifest_sha256": "ef80751ef63f2fdbfff8bc711437f733cb81cc6cee7066284f5dd572cf1f9189"
+      },
+      "yield_wait.json": {
+        "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/ordinary_smoke/attempt/reports/native_weather/yield_wait.json",
+        "sha256": "fc9dad959f368371792915a9a57ca7cf4afa0f0cde5c11cab7152859a30dafda",
+        "audit": {
+          "status": "passed",
+          "selected_events": 42,
+          "weather_calls": 42,
+          "require_weather": true,
+          "footer_present": false,
+          "truncated": false
+        },
+        "engine": {
+          "pid": 707613,
+          "start_ticks": 301805726,
+          "argv": [
+            "/root/autodl-tmp/effect-jepa/data/carla/CarlaUE4/Binaries/Linux/CarlaUE4-Linux-Shipping",
+            "CarlaUE4",
+            "-RenderOffScreen",
+            "-quality-level=Epic",
+            "-carla-rpc-port=2000",
+            "-nosound",
+            "-FixedSeed",
+            "-benchmark",
+            "FPS=20"
+          ]
+        },
+        "manifest_sha256": "ef80751ef63f2fdbfff8bc711437f733cb81cc6cee7066284f5dd572cf1f9189"
+      }
+    },
+    "reports": {
+      "physics.json": {
+        "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/ordinary_smoke/attempt/reports/physics.json",
+        "sha256": "3c719d428598914d280b659d28d6e3f3a89167b0215c999f42545abe350af1a8",
+        "status": "passed_quick_checks",
+        "summary": {
+          "expected_branches": 6,
+          "observed_complete_branches": 6,
+          "full_protocol_expected_branches": 6,
+          "full_protocol_coverage_complete": true,
+          "requested_scene_branches": {
+            "scene_0002": [
+              "maintain",
+              "commit_go",
+              "commit_delayed",
+              "stop_hold",
+              "yield_wait",
+              "maintain_repeat"
+            ]
+          },
+          "expected_scenes": 1,
+          "complete_scenes": 1,
+          "failed_checks": []
+        }
+      },
+      "physics_execution.json": {
+        "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/ordinary_smoke/attempt/reports/physics_execution.json",
+        "sha256": "33fb177abb9f7ba997e7f2bbfa96f8836511b0639407107c1b0e1184c2785f71",
+        "status": "passed",
+        "summary": null
+      },
+      "action_execution.json": {
+        "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/ordinary_smoke/attempt/reports/action_execution.json",
+        "sha256": "083289779f5e7f726c6ac67935c3ea77e9dc8fad4f7f4cf54c3f675900a0db3b",
+        "status": "passed",
+        "summary": {
+          "planned_scenes": 1,
+          "audited_scenes": 1,
+          "model_branch_count": 5,
+          "scenes_with_equivalent_motion": 1
+        }
+      },
+      "protocol.json": {
+        "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/ordinary_smoke/attempt/reports/protocol.json",
+        "sha256": "375dbde9f4023744cc6687a5f57025f12f73541c5973b7b4da156f7e909252b5",
+        "status": "passed",
+        "summary": {
+          "expected_branches": 6,
+          "passed_branches": 6,
+          "failed_branches": 0
+        }
+      },
+      "execution.json": {
+        "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/ordinary_smoke/attempt/reports/execution.json",
+        "sha256": "384c1aa2d8887bed66e3798395a38b17b04f781a8bd1cc4c9f6a04d7ed6afbc2",
+        "status": "passed",
+        "summary": null
+      },
+      "render.json": {
+        "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/ordinary_smoke/attempt/reports/render.json",
+        "sha256": "3b408dcdfa46cea2bc14f443cf9f165cf6c55c0ab5a1251e1c5fbf5f7e69a26c",
+        "status": "passed",
+        "summary": {
+          "scene_count": 1,
+          "pair_count": 198,
+          "failed_rgb_pair_count": 0,
+          "failure_count": 0,
+          "input_file_count": 374
+        }
+      },
+      "equivalence.json": {
+        "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/ordinary_smoke/attempt/reports/equivalence.json",
+        "sha256": "bfc3e51e33dc4560f150bb8386adeb25ec42a2436242671691d75586bfdda622",
+        "status": "equivalent_exact",
+        "summary": null
+      },
+      "action_selection.json": {
+        "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/ordinary_smoke/attempt/reports/action_selection.json",
+        "sha256": "b5a6969408fd07d95c8d4e450690bc4409b18a7887efef142db07eb579d143cf",
+        "status": "passed",
+        "summary": {
+          "planned_scenes": 1,
+          "audited_scenes": 1,
+          "model_branch_count": 5,
+          "scenes_with_equivalent_motion": 1
+        }
+      }
+    },
+    "source": {
+      "runtime_source_identity_sha256": "75df1e15764847c1a4e8db56a245778f6c7b9d5ae7bdac6854a349a993f0c8f5",
+      "tested_archive_sha256": "218a59573e0fc9f35d0f32abd0a72a940547c7fed4e63d9a1166ef622a68267b",
+      "tested_archive_path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/release_candidate/source.zip",
+      "source_manifest_path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/release_candidate/source_manifest.json",
+      "source_manifest_sha256": "869a1ac39526f96b5a681747372660c63042028caf783a89cea0263d4dfadd86",
+      "driver_path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/ordinary_smoke_driver/smoke.py",
+      "driver_sha256": "a56261c40d284dbe16d3239cd63f9f20d8be1c320fb1318a39b39dd49003e5d9",
+      "config_path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/ordinary_smoke_driver/config.json",
+      "config_sha256": "201e841c758e275cf61e9b57f49753df6a6324c946fbbeeef0b116731d3b73fa",
+      "status_path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/ordinary_smoke/smoke_status.json",
+      "status_sha256": "82402d8110e6d77763d1aaf17c94eeb0712f7ea49814e329690c17fdb751389b"
+    },
+    "delivery": {
+      "inventory_path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/ordinary_smoke/attempt/reports/delivery_files.json",
+      "inventory_sha256": "25e2fdc687e0c79be72710391b285ae5803e1fce6db20c23fd9f178822ea48dc",
+      "file_count": 624,
+      "native_proof_count": 7,
+      "independent_review": "Reverified inventory SHA, all624 entries paths/existence/size, all sealed report hashes, frozen package bytes and the seven native proofs with production verifier; did not redundantly rehash all PNGs. Ordinary runner had completed its original full delivery verification."
+    }
+  },
+  "runtime_source_identity_sha256": "75df1e15764847c1a4e8db56a245778f6c7b9d5ae7bdac6854a349a993f0c8f5",
+  "tested_ordinary_archive_sha256": "218a59573e0fc9f35d0f32abd0a72a940547c7fed4e63d9a1166ef622a68267b",
+  "installation_qualification_scope": "Two fixed native cases and one ordinary managed-pipeline smoke passed. Promotion/installation publication is recorded separately by the release owner.",
+  "installed_utc": "2026-11-04T05:44:53.801098+00:00",
+  "installed_skill_root": "/root/effect-jepa/runs/paired_benchmark/skills/carla-paired-data"
+}

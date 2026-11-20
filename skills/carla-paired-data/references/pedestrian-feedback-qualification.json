@@ -1,0 +1,81 @@
+{
+  "status": "native_physics_qualified",
+  "source_identity": "9cb125bfd32ed01792cf0896cf20a3c1c8fd25f95b7fdd1172f2f0529d5aeb6a",
+  "report_path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/pedestrian_feedback_001/implementation_report.md",
+  "audit_path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/pedestrian_feedback_001/final_audit.json",
+  "audit_sha256": "edbe79f563e6d76b86877fe46fa02f3f2071f1aeafa584163e67ab65120cf323",
+  "qualification": [
+    {
+      "scene": "scene_0000",
+      "attempt": "qualification_005/work/attempts/scene_0000/candidate_00/attempt_00",
+      "action_pairs_passed": 10,
+      "action_report_sha256": "f0b106f7168c74299d127205ffff4386c305fa0d589fc67a040239f0a800ba76",
+      "repeat_noise": {
+        "position_m": 0.0,
+        "speed_m_s": 0.0,
+        "control": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "map": "Town05"
+    },
+    {
+      "scene": "scene_0001",
+      "attempt": "qualification_005/work/attempts/scene_0001/candidate_00/attempt_01",
+      "action_pairs_passed": 10,
+      "action_report_sha256": "570b6077f7d2ac9d48df70e672ab0b8a63cdad43dff2591685fe951ebb30b37f",
+      "repeat_noise": {
+        "position_m": 0.0,
+        "speed_m_s": 0.0,
+        "control": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "map": "Town05"
+    }
+  ],
+  "measured_response_coverage": {
+    "slow": [
+      "diagnostics_006/physics/scene_0000/branches/accelerate",
+      "diagnostics_006/physics/scene_0001/branches/accelerate",
+      "diagnostics_006/physics/scene_0002/branches/accelerate",
+      "diagnostics_007/physics/scene_0000/branches/accelerate",
+      "diagnostics_007/physics/scene_0001/branches/accelerate"
+    ],
+    "stop": [
+      "diagnostics_006/physics/scene_0000/branches/accelerate",
+      "diagnostics_006/physics/scene_0001/branches/accelerate",
+      "diagnostics_006/physics/scene_0002/branches/accelerate",
+      "diagnostics_007/physics/scene_0000/branches/accelerate",
+      "diagnostics_007/physics/scene_0001/branches/accelerate"
+    ],
+    "retreat": [
+      "diagnostics_007/physics/scene_0001/branches/accelerate_delayed"
+    ],
+    "resume": [
+      "diagnostics_006/physics/scene_0000/branches/accelerate",
+      "diagnostics_006/physics/scene_0001/branches/accelerate",
+      "diagnostics_006/physics/scene_0002/branches/accelerate",
+      "diagnostics_007/physics/scene_0000/branches/accelerate",
+      "diagnostics_007/physics/scene_0001/branches/accelerate"
+    ]
+  },
+  "contact_branches": [
+    {
+      "path": "diagnostics_006/physics/scene_0000/branches/accelerate_delayed",
+      "collision_count": 1,
+      "first_contact_time_s": 3.7
+    },
+    {
+      "path": "diagnostics_007/physics/scene_0000/branches/accelerate_delayed",
+      "collision_count": 1,
+      "first_contact_time_s": 3.6
+    }
+  ],
+  "native_rgb_tested": false,
+  "historical_data_upgraded": false
+}

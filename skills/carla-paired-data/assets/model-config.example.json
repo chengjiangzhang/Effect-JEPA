@@ -1,0 +1,11 @@
+{
+  "provider": "openai_chat",
+  "base_url": "https://YOUR_API_HOST/v1",
+  "model": "YOUR_DEPLOYED_MODEL_ID",
+  "key_env": "SCENE_MODEL_API_KEY",
+  "timeout_s": 60,
+  "max_retries": 2,
+  "max_calls": 1000,
+  "max_output_tokens": 4096,
+  "json_mode": false
+}

@@ -1,0 +1,817 @@
+{
+  "status": "qualified",
+  "completed_utc": "2026-11-10T08:33:12.427474+00:00",
+  "scope": "Pinned CARLA 0.9.16 native decal ordering; fixed Town10HD light-rain case plus Town05 dry-fog repeat regression. Not a production delivery or universal pixel determinism claim.",
+  "source": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/source_decal_fix_003",
+  "runtime_identity_sha256": "94b05f3a08eec1e0af93b7ec77d74ed152eefb32c0c66abbf49834149630a71e",
+  "source_inventory": {
+    "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/decal_fix_build_003.json",
+    "sha256": "b143059b7eca463f4891eb2e4c02b1f077baec8bf25e5c4e114d2c5312a5c9dd",
+    "bytes": 11270
+  },
+  "native_library_sha256": "f8e013fe51966085f37fb88c8def4296ac5b7729e7d866ac07df5355db1696ba",
+  "rgb_reports": [
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/decal_fix_pair_002/reports/render.json",
+      "sha256": "01024ff891cdb6c4bcc4373fd32175d692dcc08b64ae5f0d6cf4750ce52f7217",
+      "bytes": 100918,
+      "pairs": 78,
+      "failed_pairs": 0,
+      "pixel_exact_pairs": 0,
+      "maxima": {
+        "mae_0_255": 0.002866898148148148,
+        "max_tile_mae_0_255": 0.04593333333333333,
+        "fraction_any_channel_gt_8": 3.611111111111111e-05,
+        "fraction_any_channel_gt_32": 1.388888888888889e-06,
+        "max_channel_difference_0_255": 52
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_01/reports/render.json",
+      "sha256": "a63490dd58613c27711ebeb07c1604a2cd62ae08054681282cbcd6ab898fa0dd",
+      "bytes": 244217,
+      "pairs": 198,
+      "failed_pairs": 0,
+      "pixel_exact_pairs": 4,
+      "maxima": {
+        "mae_0_255": 0.003673148148148148,
+        "max_tile_mae_0_255": 0.06633333333333333,
+        "fraction_any_channel_gt_8": 6.25e-05,
+        "fraction_any_channel_gt_32": 2.777777777777778e-06,
+        "max_channel_difference_0_255": 48
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_02/reports/render.json",
+      "sha256": "b84ea93ef27b492b5af3e65ef640ed2e7e16e73e4585b0fabbbf2cd6861a1e6f",
+      "bytes": 244043,
+      "pairs": 198,
+      "failed_pairs": 0,
+      "pixel_exact_pairs": 8,
+      "maxima": {
+        "mae_0_255": 0.003748148148148148,
+        "max_tile_mae_0_255": 0.0789,
+        "fraction_any_channel_gt_8": 6.319444444444444e-05,
+        "fraction_any_channel_gt_32": 1.388888888888889e-06,
+        "max_channel_difference_0_255": 54
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/reports/cross_round_rgb.json",
+      "sha256": "edf225728e771a6a8a50b679ef2293b492bb3dde297545412bcadb30f488d33a",
+      "bytes": 402293,
+      "pairs": 468,
+      "failed_pairs": 0,
+      "pixel_exact_pairs": 0,
+      "maxima": {
+        "mae_0_255": 0.0041645833333333335,
+        "max_tile_mae_0_255": 0.23203333333333334,
+        "fraction_any_channel_gt_8": 6.38888888888889e-05,
+        "fraction_any_channel_gt_32": 3.4722222222222224e-06,
+        "max_channel_difference_0_255": 71
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/town05_regression_001/reports/render.json",
+      "sha256": "7248191b7d07fdb8787fe85362595e47282fb9dc26605bbac4bdafb6e7867dfc",
+      "bytes": 99753,
+      "pairs": 78,
+      "failed_pairs": 0,
+      "pixel_exact_pairs": 2,
+      "maxima": {
+        "mae_0_255": 0.000325,
+        "max_tile_mae_0_255": 0.013833333333333333,
+        "fraction_any_channel_gt_8": 6.944444444444445e-06,
+        "fraction_any_channel_gt_32": 0.0,
+        "max_channel_difference_0_255": 30
+      }
+    }
+  ],
+  "total_rgb_pairs": 1020,
+  "failed_rgb_pairs": 0,
+  "pixel_exact_pairs": 14,
+  "overall_maxima": {
+    "mae_0_255": 0.0041645833333333335,
+    "max_tile_mae_0_255": 0.23203333333333334,
+    "fraction_any_channel_gt_8": 6.38888888888889e-05,
+    "fraction_any_channel_gt_32": 3.4722222222222224e-06,
+    "max_channel_difference_0_255": 71
+  },
+  "physical_reports": [
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_01/reports/physics.json",
+      "sha256": "6fc35613921485e6a528283135a963765f3f00a6d226207c025e5b13e59e686a",
+      "bytes": 51840,
+      "status": "passed_quick_checks"
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_01/reports/physics_execution.json",
+      "sha256": "5b0b6c5031efb1cea0612fff9583ff19a4bef65276ce1756337507e2bd787684",
+      "bytes": 105212,
+      "status": "passed"
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_01/reports/physics_actions.json",
+      "sha256": "72c43d22859f45821c625b51b5c56081b65c71b32742808e1d7b27b54e082e7c",
+      "bytes": 43487,
+      "status": "passed"
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_01/reports/protocol.json",
+      "sha256": "0cc94f3ab51985390ea54b1eea39735bd56c0381f30510b3e3470851e04d9074",
+      "bytes": 282678,
+      "status": "passed"
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_01/reports/equivalence.json",
+      "sha256": "2bc189d8b34213b0ef4c40032ca6223fce9fa307660c688e159ea4464ec5262a",
+      "bytes": 112671,
+      "status": "equivalent_exact"
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_01/reports/execution.json",
+      "sha256": "919da89d82cebf4530960d9080954f041ab8562cf601c3396ef04df6bd0e8390",
+      "bytes": 105212,
+      "status": "passed"
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_01/reports/actions.json",
+      "sha256": "5880fb2b3f7e987c3bce11767ea99749bd59370ef0130f255a9d79fa7602f9ef",
+      "bytes": 43480,
+      "status": "passed"
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_02/reports/physics.json",
+      "sha256": "fb7406688be02246ba3c5872b145dbd9552b2fcfca8271b6af0ff73b0eb6f87e",
+      "bytes": 51840,
+      "status": "passed_quick_checks"
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_02/reports/physics_execution.json",
+      "sha256": "ec0988e96e995d22f566ff554f1a96341eed587d77f5793f77c5de9cff9a48b6",
+      "bytes": 105212,
+      "status": "passed"
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_02/reports/physics_actions.json",
+      "sha256": "18a2ac2a45d4dc1ac79aa95e11ccad3de32a5f9949302666c7cec3a07db79ee0",
+      "bytes": 43487,
+      "status": "passed"
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_02/reports/protocol.json",
+      "sha256": "c3f2e3b84c4dc35c9b47552ae160cb290b1056fddd2e24bcea75c1231349b493",
+      "bytes": 282668,
+      "status": "passed"
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_02/reports/equivalence.json",
+      "sha256": "7452178f3df5fbd8a23376f943f85f30185748fc667ede26127ffca9f76cfd58",
+      "bytes": 112671,
+      "status": "equivalent_exact"
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_02/reports/execution.json",
+      "sha256": "ecf2ff7bae87205ef050c8858e4a3fccd1c6434dce0a0513ceef6d7c68bb8b50",
+      "bytes": 105212,
+      "status": "passed"
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_02/reports/actions.json",
+      "sha256": "e51263efdeb246e5300e6e5193f8c4dd422e46e2e2b302ba259df85daf317d67",
+      "bytes": 43480,
+      "status": "passed"
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/reports/cross_round_physics_v2.json",
+      "sha256": "314de32ea48ef8ac3da6494b8805af7a6b4d4e5bd96b29d5b12c819f94bb8170",
+      "bytes": 112671,
+      "status": "equivalent_exact"
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/reports/cross_round_states_and_calibration.json",
+      "sha256": "5e276c5dc814ba48881c18b5530c1da6db3883af794672efb3facedbfbc5e480",
+      "bytes": 57840,
+      "status": "passed"
+    }
+  ],
+  "new_native_proofs": [
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_01/reports/native_weather/commit_go.json",
+      "sha256": "87547310228e510cd116021467fd27302b919aa1efe7a2985b33952b124f1598",
+      "bytes": 362240,
+      "phase": "rgb",
+      "weather": {
+        "status": "passed",
+        "selected_events": 42,
+        "weather_calls": 42,
+        "require_weather": true,
+        "footer_present": false,
+        "truncated": false
+      },
+      "decal": {
+        "status": "passed",
+        "calls": 1497,
+        "changed_lists": 1497,
+        "camera_lists": 1218,
+        "footer_present": false,
+        "zero_call_semantics": "No visible list with at least two decals was recorded; header proves hook installation, not a changed draw."
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_01/reports/native_weather/decelerate.json",
+      "sha256": "0376b497a6d9ed9a6176ae619db2a9240a36b2d2f0ea4958fa5ccf831fe3d4ec",
+      "bytes": 362231,
+      "phase": "rgb",
+      "weather": {
+        "status": "passed",
+        "selected_events": 42,
+        "weather_calls": 42,
+        "require_weather": true,
+        "footer_present": false,
+        "truncated": false
+      },
+      "decal": {
+        "status": "passed",
+        "calls": 1497,
+        "changed_lists": 1497,
+        "camera_lists": 1218,
+        "footer_present": false,
+        "zero_call_semantics": "No visible list with at least two decals was recorded; header proves hook installation, not a changed draw."
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_01/reports/native_weather/maintain.json",
+      "sha256": "fc23ac7d23c7dd65778ac076b38a13053fb02ecbdfbc268885641ba5d145d94a",
+      "bytes": 362227,
+      "phase": "rgb",
+      "weather": {
+        "status": "passed",
+        "selected_events": 42,
+        "weather_calls": 42,
+        "require_weather": true,
+        "footer_present": false,
+        "truncated": false
+      },
+      "decal": {
+        "status": "passed",
+        "calls": 1497,
+        "changed_lists": 1497,
+        "camera_lists": 1218,
+        "footer_present": false,
+        "zero_call_semantics": "No visible list with at least two decals was recorded; header proves hook installation, not a changed draw."
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_01/reports/native_weather/maintain_repeat.json",
+      "sha256": "0b4a0ead6560306125a7c091e77ef50931ae4e008ee32765df5648d02024e15e",
+      "bytes": 362236,
+      "phase": "rgb",
+      "weather": {
+        "status": "passed",
+        "selected_events": 42,
+        "weather_calls": 42,
+        "require_weather": true,
+        "footer_present": false,
+        "truncated": false
+      },
+      "decal": {
+        "status": "passed",
+        "calls": 1497,
+        "changed_lists": 1497,
+        "camera_lists": 1218,
+        "footer_present": false,
+        "zero_call_semantics": "No visible list with at least two decals was recorded; header proves hook installation, not a changed draw."
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_01/reports/native_weather/physics.json",
+      "sha256": "c0aff5523c2f930bb92890f7b21b45e4412c2312142f81794a92749411a3d13b",
+      "bytes": 25976,
+      "phase": "physics",
+      "weather": {
+        "status": "passed",
+        "selected_events": 0,
+        "weather_calls": 0,
+        "require_weather": false,
+        "footer_present": false,
+        "truncated": false
+      },
+      "decal": {
+        "status": "passed",
+        "calls": 73,
+        "changed_lists": 73,
+        "camera_lists": 0,
+        "footer_present": false,
+        "zero_call_semantics": "No visible list with at least two decals was recorded; header proves hook installation, not a changed draw."
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_01/reports/native_weather/stop_hold.json",
+      "sha256": "af777e85451de7871bd594ca348005ea723c436e8de8ba089ff27e545df856e7",
+      "bytes": 362223,
+      "phase": "rgb",
+      "weather": {
+        "status": "passed",
+        "selected_events": 42,
+        "weather_calls": 42,
+        "require_weather": true,
+        "footer_present": false,
+        "truncated": false
+      },
+      "decal": {
+        "status": "passed",
+        "calls": 1497,
+        "changed_lists": 1497,
+        "camera_lists": 1218,
+        "footer_present": false,
+        "zero_call_semantics": "No visible list with at least two decals was recorded; header proves hook installation, not a changed draw."
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_01/reports/native_weather/yield_wait.json",
+      "sha256": "dda3010b9997bdbaf33772880a7d1dbf5ecf07200516c3db1e8986a19294414d",
+      "bytes": 362007,
+      "phase": "rgb",
+      "weather": {
+        "status": "passed",
+        "selected_events": 42,
+        "weather_calls": 42,
+        "require_weather": true,
+        "footer_present": false,
+        "truncated": false
+      },
+      "decal": {
+        "status": "passed",
+        "calls": 1496,
+        "changed_lists": 1496,
+        "camera_lists": 1218,
+        "footer_present": false,
+        "zero_call_semantics": "No visible list with at least two decals was recorded; header proves hook installation, not a changed draw."
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_02/reports/native_weather/commit_go.json",
+      "sha256": "3269a3e06147fafddfd66fe866cbdf94f22234ecfbfbe188c2e89a9a3035f6cb",
+      "bytes": 362238,
+      "phase": "rgb",
+      "weather": {
+        "status": "passed",
+        "selected_events": 42,
+        "weather_calls": 42,
+        "require_weather": true,
+        "footer_present": false,
+        "truncated": false
+      },
+      "decal": {
+        "status": "passed",
+        "calls": 1497,
+        "changed_lists": 1497,
+        "camera_lists": 1218,
+        "footer_present": false,
+        "zero_call_semantics": "No visible list with at least two decals was recorded; header proves hook installation, not a changed draw."
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_02/reports/native_weather/decelerate.json",
+      "sha256": "e1852ae1948bb2e32d7b2b9c7106b7fb28ab1638e49577151bc00d93ebe3a170",
+      "bytes": 362224,
+      "phase": "rgb",
+      "weather": {
+        "status": "passed",
+        "selected_events": 42,
+        "weather_calls": 42,
+        "require_weather": true,
+        "footer_present": false,
+        "truncated": false
+      },
+      "decal": {
+        "status": "passed",
+        "calls": 1497,
+        "changed_lists": 1497,
+        "camera_lists": 1218,
+        "footer_present": false,
+        "zero_call_semantics": "No visible list with at least two decals was recorded; header proves hook installation, not a changed draw."
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_02/reports/native_weather/maintain.json",
+      "sha256": "5f833b8685a73699bb6ab0707e5b1fb4d21988a05345509939ea3c5ef361b966",
+      "bytes": 362231,
+      "phase": "rgb",
+      "weather": {
+        "status": "passed",
+        "selected_events": 42,
+        "weather_calls": 42,
+        "require_weather": true,
+        "footer_present": false,
+        "truncated": false
+      },
+      "decal": {
+        "status": "passed",
+        "calls": 1497,
+        "changed_lists": 1497,
+        "camera_lists": 1218,
+        "footer_present": false,
+        "zero_call_semantics": "No visible list with at least two decals was recorded; header proves hook installation, not a changed draw."
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_02/reports/native_weather/maintain_repeat.json",
+      "sha256": "820c9b7965139503c9941396c6e22ab45c4107d9ee3cab732bf9a99181ba814e",
+      "bytes": 362235,
+      "phase": "rgb",
+      "weather": {
+        "status": "passed",
+        "selected_events": 42,
+        "weather_calls": 42,
+        "require_weather": true,
+        "footer_present": false,
+        "truncated": false
+      },
+      "decal": {
+        "status": "passed",
+        "calls": 1497,
+        "changed_lists": 1497,
+        "camera_lists": 1218,
+        "footer_present": false,
+        "zero_call_semantics": "No visible list with at least two decals was recorded; header proves hook installation, not a changed draw."
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_02/reports/native_weather/physics.json",
+      "sha256": "233302976486c9e3b5c53a284f5916437390c8340ff8b9c247a7ffb631312575",
+      "bytes": 25975,
+      "phase": "physics",
+      "weather": {
+        "status": "passed",
+        "selected_events": 0,
+        "weather_calls": 0,
+        "require_weather": false,
+        "footer_present": false,
+        "truncated": false
+      },
+      "decal": {
+        "status": "passed",
+        "calls": 73,
+        "changed_lists": 73,
+        "camera_lists": 0,
+        "footer_present": false,
+        "zero_call_semantics": "No visible list with at least two decals was recorded; header proves hook installation, not a changed draw."
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_02/reports/native_weather/stop_hold.json",
+      "sha256": "508774d52e34426b19f7322090b18bc292ef0dee94b8387da3fbf200889cf0e7",
+      "bytes": 362230,
+      "phase": "rgb",
+      "weather": {
+        "status": "passed",
+        "selected_events": 42,
+        "weather_calls": 42,
+        "require_weather": true,
+        "footer_present": false,
+        "truncated": false
+      },
+      "decal": {
+        "status": "passed",
+        "calls": 1497,
+        "changed_lists": 1497,
+        "camera_lists": 1218,
+        "footer_present": false,
+        "zero_call_semantics": "No visible list with at least two decals was recorded; header proves hook installation, not a changed draw."
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_02/reports/native_weather/yield_wait.json",
+      "sha256": "04c62973bbb80a0b0dd827c97d8793b8f10c7853f002a970020b3e0acf359d52",
+      "bytes": 362230,
+      "phase": "rgb",
+      "weather": {
+        "status": "passed",
+        "selected_events": 42,
+        "weather_calls": 42,
+        "require_weather": true,
+        "footer_present": false,
+        "truncated": false
+      },
+      "decal": {
+        "status": "passed",
+        "calls": 1497,
+        "changed_lists": 1497,
+        "camera_lists": 1218,
+        "footer_present": false,
+        "zero_call_semantics": "No visible list with at least two decals was recorded; header proves hook installation, not a changed draw."
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/town05_regression_001/reports/native_weather/maintain.json",
+      "sha256": "3ae9ac810a4c1a315a25ad443075e0f5820281c8a090bf5fa8725256cdb98472",
+      "bytes": 13120,
+      "phase": "rgb",
+      "weather": {
+        "status": "passed",
+        "selected_events": 0,
+        "weather_calls": 0,
+        "require_weather": false,
+        "footer_present": false,
+        "truncated": false
+      },
+      "decal": {
+        "status": "passed",
+        "calls": 24,
+        "changed_lists": 24,
+        "camera_lists": 0,
+        "footer_present": false,
+        "zero_call_semantics": "No visible list with at least two decals was recorded; header proves hook installation, not a changed draw."
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/town05_regression_001/reports/native_weather/maintain_repeat.json",
+      "sha256": "03512f9ba60a11057f52f09d4d96a1dde71e7144b26af68e983124c047962390",
+      "bytes": 13127,
+      "phase": "rgb",
+      "weather": {
+        "status": "passed",
+        "selected_events": 0,
+        "weather_calls": 0,
+        "require_weather": false,
+        "footer_present": false,
+        "truncated": false
+      },
+      "decal": {
+        "status": "passed",
+        "calls": 24,
+        "changed_lists": 24,
+        "camera_lists": 0,
+        "footer_present": false,
+        "zero_call_semantics": "No visible list with at least two decals was recorded; header proves hook installation, not a changed draw."
+      }
+    }
+  ],
+  "cross_round_completion": {
+    "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/cross_round_completion.json",
+    "sha256": "9db943f64cd2762480ee26229435a8b9ff2bc86b262875768051c897d6bd0df8",
+    "bytes": 790
+  },
+  "inventories": [
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_01/qualification_inventory.json",
+      "sha256": "d74b63fc0c16d73cd86449ac008bd0112246799b29fd76f1b70331f9fe6a7563",
+      "bytes": 126539,
+      "verified_files": 684
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_02/qualification_inventory.json",
+      "sha256": "98c39a3d71391da5ff53bed7b861a8480f834a37b2b729ca64ac17ff86c34f40",
+      "bytes": 126539,
+      "verified_files": 684
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/town05_regression_001/qualification_inventory.json",
+      "sha256": "6c697a9e183e97d7fdc6c871c88044281c8a536fb03f9c483adba8540af59f6b",
+      "bytes": 41437,
+      "verified_files": 222
+    }
+  ],
+  "cleanup": [
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_01/servers/server_000001/shutdown.json",
+      "sha256": "dca88309ec6e69243a5bb8522b2ce7fd57c84cd8446c4063ffa031c73b94c758",
+      "bytes": 76,
+      "result": {
+        "engine_restored": true,
+        "returncode": -15,
+        "stop_requested": true
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_01/servers/server_000002/shutdown.json",
+      "sha256": "dca88309ec6e69243a5bb8522b2ce7fd57c84cd8446c4063ffa031c73b94c758",
+      "bytes": 76,
+      "result": {
+        "engine_restored": true,
+        "returncode": -15,
+        "stop_requested": true
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_01/servers/server_000003/shutdown.json",
+      "sha256": "dca88309ec6e69243a5bb8522b2ce7fd57c84cd8446c4063ffa031c73b94c758",
+      "bytes": 76,
+      "result": {
+        "engine_restored": true,
+        "returncode": -15,
+        "stop_requested": true
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_01/servers/server_000004/shutdown.json",
+      "sha256": "dca88309ec6e69243a5bb8522b2ce7fd57c84cd8446c4063ffa031c73b94c758",
+      "bytes": 76,
+      "result": {
+        "engine_restored": true,
+        "returncode": -15,
+        "stop_requested": true
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_01/servers/server_000005/shutdown.json",
+      "sha256": "dca88309ec6e69243a5bb8522b2ce7fd57c84cd8446c4063ffa031c73b94c758",
+      "bytes": 76,
+      "result": {
+        "engine_restored": true,
+        "returncode": -15,
+        "stop_requested": true
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_01/servers/server_000006/shutdown.json",
+      "sha256": "dca88309ec6e69243a5bb8522b2ce7fd57c84cd8446c4063ffa031c73b94c758",
+      "bytes": 76,
+      "result": {
+        "engine_restored": true,
+        "returncode": -15,
+        "stop_requested": true
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_01/servers/server_000007/shutdown.json",
+      "sha256": "dca88309ec6e69243a5bb8522b2ce7fd57c84cd8446c4063ffa031c73b94c758",
+      "bytes": 76,
+      "result": {
+        "engine_restored": true,
+        "returncode": -15,
+        "stop_requested": true
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_02/servers/server_000001/shutdown.json",
+      "sha256": "dca88309ec6e69243a5bb8522b2ce7fd57c84cd8446c4063ffa031c73b94c758",
+      "bytes": 76,
+      "result": {
+        "engine_restored": true,
+        "returncode": -15,
+        "stop_requested": true
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_02/servers/server_000002/shutdown.json",
+      "sha256": "dca88309ec6e69243a5bb8522b2ce7fd57c84cd8446c4063ffa031c73b94c758",
+      "bytes": 76,
+      "result": {
+        "engine_restored": true,
+        "returncode": -15,
+        "stop_requested": true
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_02/servers/server_000003/shutdown.json",
+      "sha256": "dca88309ec6e69243a5bb8522b2ce7fd57c84cd8446c4063ffa031c73b94c758",
+      "bytes": 76,
+      "result": {
+        "engine_restored": true,
+        "returncode": -15,
+        "stop_requested": true
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_02/servers/server_000004/shutdown.json",
+      "sha256": "dca88309ec6e69243a5bb8522b2ce7fd57c84cd8446c4063ffa031c73b94c758",
+      "bytes": 76,
+      "result": {
+        "engine_restored": true,
+        "returncode": -15,
+        "stop_requested": true
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_02/servers/server_000005/shutdown.json",
+      "sha256": "dca88309ec6e69243a5bb8522b2ce7fd57c84cd8446c4063ffa031c73b94c758",
+      "bytes": 76,
+      "result": {
+        "engine_restored": true,
+        "returncode": -15,
+        "stop_requested": true
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_02/servers/server_000006/shutdown.json",
+      "sha256": "dca88309ec6e69243a5bb8522b2ce7fd57c84cd8446c4063ffa031c73b94c758",
+      "bytes": 76,
+      "result": {
+        "engine_restored": true,
+        "returncode": -15,
+        "stop_requested": true
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_02/servers/server_000007/shutdown.json",
+      "sha256": "dca88309ec6e69243a5bb8522b2ce7fd57c84cd8446c4063ffa031c73b94c758",
+      "bytes": 76,
+      "result": {
+        "engine_restored": true,
+        "returncode": -15,
+        "stop_requested": true
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/town05_regression_001/servers/server_000001/shutdown.json",
+      "sha256": "dca88309ec6e69243a5bb8522b2ce7fd57c84cd8446c4063ffa031c73b94c758",
+      "bytes": 76,
+      "result": {
+        "engine_restored": true,
+        "returncode": -15,
+        "stop_requested": true
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/town05_regression_001/servers/server_000002/shutdown.json",
+      "sha256": "dca88309ec6e69243a5bb8522b2ce7fd57c84cd8446c4063ffa031c73b94c758",
+      "bytes": 76,
+      "result": {
+        "engine_restored": true,
+        "returncode": -15,
+        "stop_requested": true
+      }
+    }
+  ],
+  "scientific_input_checks": [
+    {
+      "attempt": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_01",
+      "original_spec": {
+        "path": "/root/effect-jepa/runs/paired_benchmark/eval_005/work/attempts/scene_0178/candidate_00/attempt_03/data/scene_0178/spec.json",
+        "sha256": "5fc100c68bfbbdfbe816900c378827c4ad3e89318e4c8f1f74e9cdc96bf103ea",
+        "bytes": 451988
+      },
+      "changed_spec_fields": [],
+      "render_preset_and_maps_unchanged": true
+    },
+    {
+      "attempt": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/full_qualification_002/round_02",
+      "original_spec": {
+        "path": "/root/effect-jepa/runs/paired_benchmark/eval_005/work/attempts/scene_0178/candidate_00/attempt_03/data/scene_0178/spec.json",
+        "sha256": "5fc100c68bfbbdfbe816900c378827c4ad3e89318e4c8f1f74e9cdc96bf103ea",
+        "bytes": 451988
+      },
+      "changed_spec_fields": [],
+      "render_preset_and_maps_unchanged": true
+    },
+    {
+      "attempt": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/town05_regression_001",
+      "original_spec": {
+        "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/eval_001/recovery_diagnostics/rgb_repeat_fix_20261104/weather_rng_dry_probe/runs/weather_rng_dry_town05_full_001/round_01/data/scene_0032/spec.json",
+        "sha256": "a90744ab478b8a14ac235edbbab2a4d74393957fbf8d19244b2c1d15727463ca",
+        "bytes": 590011
+      },
+      "changed_spec_fields": [
+        "code_sha256",
+        "spec_sha256"
+      ],
+      "render_preset_and_maps_unchanged": true
+    }
+  ],
+  "offline_tests": {
+    "scripts": {
+      "command": "python -B -m unittest discover -s scripts -p 'test_*.py'",
+      "returncode": 0,
+      "tests": 522,
+      "skipped": 5,
+      "duration_s": 39.185,
+      "evidence": "Observed exec session 44086 output; stdout was returned by the execution tool, not saved as a raw file."
+    },
+    "runtime": {
+      "command": "python -B -m unittest discover -s scripts/runtime -p 'test_*.py'",
+      "returncode": 0,
+      "tests": 257,
+      "skipped": 2,
+      "duration_s": 25.56,
+      "log": "offline_runtime_tests.log"
+    },
+    "source": "source_decal_fix_003"
+  },
+  "reproducible_build": {
+    "status": "passed",
+    "packaged_sha256": "f8e013fe51966085f37fb88c8def4296ac5b7729e7d866ac07df5355db1696ba",
+    "rebuilt_sha256": "f8e013fe51966085f37fb88c8def4296ac5b7729e7d866ac07df5355db1696ba",
+    "command": "gcc -shared -fPIC -O2 -Wall -Wextra -Werror -o rebuilt_verification.so weather_rng.c rand_entry.S -ldl -pthread"
+  },
+  "first_pair_order_check": {
+    "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/decal_fix_pair_002/reports/fixed_decal_order_comparison.json",
+    "sha256": "fb080af0789d2459e23d72b4df6f564ce3d0f51b89437cd8ff9fd90409fc2a71",
+    "bytes": 827
+  },
+  "guard_reversion": {
+    "path": "/root/effect-jepa/runs/paired_benchmark/rgb_retry_guard_001/reverted.json",
+    "sha256": "5b78ac8fe231de1933115756cb3517682cfb1a9da6e81fb7ccce730e93b623d4",
+    "bytes": 597
+  },
+  "reserve_gib": 9,
+  "free_disk_bytes": 9931276288,
+  "installation_status": "qualification_evidence_only",
+  "qualification_report": {
+    "path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/qualification.json",
+    "sha256": "f568ed24391386726b73a1138efe6dfa2581dd873e5e5266cf2d57ade0be431e"
+  },
+  "installation_record_path": "/root/autodl-tmp/effect-jepa/runs/paired_benchmark/rgb_render_rootcause_001/installation.json"
+}
